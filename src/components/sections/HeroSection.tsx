@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-video-bg.jpg";
-import conciergaLogo from "@/assets/conciera-logo-new.png";
 
 const HeroSection = () => {
   return (
@@ -19,14 +18,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         
-        {/* Logo */}
-        <div className="mb-12 animate-fade-up">
-          <img 
-            src={conciergaLogo} 
-            alt="CONCIERA" 
-            className="h-16 md:h-20 lg:h-24 mx-auto mb-8"
-          />
-        </div>
 
         {/* Main Headline */}
         <div className="mb-12 animate-fade-up [animation-delay:200ms] opacity-0">

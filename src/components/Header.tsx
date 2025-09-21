@@ -19,10 +19,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="text-2xl lg:text-3xl font-serif font-bold text-primary">
-              CONCIERA<span className="text-luxury-gold">™</span>
-            </div>
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img 
+              src="/src/assets/logo-conciera.png" 
+              alt="Conciera Logo" 
+              className="h-8 lg:h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
