@@ -25,7 +25,7 @@ const HeroSection = () => {
             Transforme conversas em receita
           </h1>
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-luxury-ivory/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto">
-            A única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar empatia, conexão e maior conversão
+            A Conciera é a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar conexão e maior conversão
           </p>
         </div>
 
