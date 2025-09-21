@@ -22,7 +22,7 @@ const HeroSection = () => {
         {/* Main Headline */}
         <div className="mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-luxury-ivory mb-8 leading-tight">
-            O concierge de IA humanizado que transforma leads em pacientes e pacientes em receita
+            A concierge de IA humanizado que transforma leads em pacientes e pacientes em receita
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-luxury-ivory/90 leading-relaxed max-w-5xl mx-auto">
             Acolhe, qualifica, agenda, recebe e acompanha cada paciente antes e depois do procedimento — 24/7, via WhatsApp, Instagram, site e telefone — em uma linguagem natural e alinhada ao seu branding.
