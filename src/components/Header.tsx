@@ -21,7 +21,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img 
-              src="/src/assets/Logo-Conciera.png" 
+              src="/src/assets/logo-conciera.png" 
               alt="Conciera Logo" 
               className="h-6 sm:h-7 lg:h-8 w-auto"
             />
