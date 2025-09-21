@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Conciera luxury colors
+        luxury: {
+          gold: "hsl(var(--luxury-gold))",
+          marble: "hsl(var(--luxury-marble))",
+          ivory: "hsl(var(--luxury-ivory))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
