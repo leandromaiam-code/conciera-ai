@@ -17,7 +17,7 @@ const Results = () => {
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      percentage: "+",
+      percentage: "50%",
       title: "Mais receita",
       description: "aumentar faturamento ao integrar agendamento + pagamento no mesmo fluxo."
     },
