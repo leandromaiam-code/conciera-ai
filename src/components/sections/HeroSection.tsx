@@ -27,43 +27,20 @@ const HeroSection = () => {
 
         {/* Main Headline */}
         <div className="mb-8 animate-fade-up [animation-delay:200ms] opacity-0">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif text-luxury-ivory mb-6 leading-tight">
-            Elevando a comunicação a um patamar onde a conversão 
-            <br className="hidden lg:block" />
-            <span className="text-luxury-gold"> se torna inevitável</span>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-luxury-ivory/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+            Concierge de IA para Clínicas Premium
           </h2>
-          <p className="text-lg md:text-xl text-luxury-ivory/80 leading-relaxed">
-            pela junção de IA, Estratégia e Arte
+          <p className="text-lg md:text-xl text-luxury-gold font-medium leading-relaxed">
+            Transforme atendimento em receita, 24/7
           </p>
         </div>
 
-        {/* Subtitle */}
-        <div className="mb-12 animate-fade-up [animation-delay:400ms] opacity-0">
-          <p className="text-lg md:text-xl text-luxury-ivory/90 max-w-4xl mx-auto leading-relaxed">
-            Acolhe, qualifica, agenda, recebe e acompanha o pré e o pós procedimento 
-            de forma individualizada e com precisão cirúrgica — tudo alinhado ao 
-            <span className="text-luxury-gold font-semibold"> branding e posicionamento da sua clínica</span>
-          </p>
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up [animation-delay:600ms] opacity-0">
+        {/* Single CTA */}
+        <div className="animate-fade-up [animation-delay:400ms] opacity-0">
           <Button variant="gold" size="xl" className="hover-glow">
-            Descubra como funciona agora
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          
-          <Button variant="outline_gold" size="xl" className="hover-lift">
             <Play className="mr-2 h-5 w-5" />
-            Ver demonstração
+            Ver Demonstração
           </Button>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-luxury-gold/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-luxury-gold rounded-full mt-2 animate-pulse"></div>
-          </div>
         </div>
       </div>
     </section>

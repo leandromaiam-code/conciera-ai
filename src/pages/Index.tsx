@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
-import ValueProposition from "@/components/sections/ValueProposition";
+import SocialProof from "@/components/sections/SocialProof";
 import PainSolution from "@/components/sections/PainSolution";
 import HowItWorks from "@/components/sections/HowItWorks";
-import PlansSection from "@/components/sections/PlansSection";
+import FinalCTA from "@/components/sections/FinalCTA";
 
 const Index = () => {
   return (
@@ -12,10 +12,10 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <ValueProposition />
+        <SocialProof />
         <PainSolution />
         <HowItWorks />
-        <PlansSection />
+        <FinalCTA />
       </main>
       <Footer />
     </div>

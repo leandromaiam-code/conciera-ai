@@ -1,43 +1,37 @@
-import { MessageCircle, Brain, Calendar, BarChart3 } from "lucide-react";
+import { MessageCircle, Brain, Calendar } from "lucide-react";
 
 const HowItWorks = () => {
   const steps = [
     {
       number: "01",
       icon: <MessageCircle className="w-10 h-10" />,
-      title: "Acolhe",
-      description: "Paciente chega via WhatsApp, Instagram, site ou telefone. IA reconhece intenção e perfil comportamental."
+      title: "Acolhe com Inteligência",
+      description: "Reconhece o perfil do paciente e adapta a linguagem para gerar conexão imediata"
     },
     {
       number: "02", 
       icon: <Brain className="w-10 h-10" />,
-      title: "Qualifica & Conecta",
-      description: "Adapta comunicação ao perfil, usa playbooks especializados e quebra objeções com empatia natural."
+      title: "Qualifica e Converte",
+      description: "Quebra objeções com método proprietário e conduz para o agendamento"
     },
     {
       number: "03",
       icon: <Calendar className="w-10 h-10" />,
-      title: "Agenda & Recebe",
-      description: "Apresenta horários, envia link seguro de pagamento (PIX/cartão) e confirma reserva no mesmo fluxo."
-    },
-    {
-      number: "04",
-      icon: <BarChart3 className="w-10 h-10" />,
-      title: "Entrega Insights",
-      description: "Gera relatórios de conversão e briefings estratégicos baseados no MÉTODO ARCHETIPSE®"
+      title: "Agenda e Recebe",
+      description: "Integra agendamento com pagamento seguro no mesmo fluxo - sem rupturas"
     }
   ];
 
   return (
-    <section className="py-24 bg-gradient-marble">
+    <section id="como-funciona" className="py-24 bg-gradient-marble">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-            De um simples contacto a um 
+            Como Transformamos Contato em 
             <br />
-            <span className="text-luxury-gold">agendamento pago. Em 4 passos.</span>
+            <span className="text-luxury-gold">Receita em 3 passos</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Fluxo inteligente que transforma visitantes em pacientes pagos, 
@@ -51,7 +45,7 @@ const HowItWorks = () => {
           {/* Connection Line */}
           <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-gold opacity-30"></div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4">
             {steps.map((step, index) => (
               <div 
                 key={index}
