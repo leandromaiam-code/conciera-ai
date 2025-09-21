@@ -36,7 +36,7 @@ const HeroSection = () => {
             <span className="text-sm lg:text-base">Agendar demonstração gratuita</span>
           </Button>
           <p className="text-luxury-ivory/70 text-xs sm:text-sm px-4">
-            Clínicas de alto padrão já aumentaram conversão e reduziram faltas com a CONCIERA.
+            Clínicas de alto padrão já podem aumentar imediatamente a conversão com a CONCIERA.
           </p>
         </div>
       </div>
