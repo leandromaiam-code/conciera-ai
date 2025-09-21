@@ -7,12 +7,12 @@ const HeroSection = () => {
   const { theme } = useTheme();
   
   return (
-    <section className={theme === 'white-piano-premium' ? 
+    <section className={theme === 'light' ? 
       "relative min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] pt-12 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
       "relative min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] pt-12 lg:pt-16 flex items-center justify-center overflow-hidden"
     }>
       {/* Background Image with Overlay */}
-      {theme !== 'white-piano-premium' && (
+      {theme !== 'light' && (
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
@@ -29,13 +29,13 @@ const HeroSection = () => {
 
         {/* Main Headline */}
         <div className="mb-8 lg:mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
-          <h1 className={theme === 'white-piano-premium' ? 
+          <h1 className={theme === 'light' ? 
             "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-foreground mb-6 lg:mb-8 leading-tight" :
             "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-luxury-ivory mb-6 lg:mb-8 leading-tight"
           }>
             Transforme conversas em receita
           </h1>
-          <p className={theme === 'white-piano-premium' ?
+          <p className={theme === 'light' ?
             "text-base sm:text-lg lg:text-xl xl:text-2xl text-foreground/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto" :
             "text-base sm:text-lg lg:text-xl xl:text-2xl text-luxury-ivory/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto"
           }>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <Calendar className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
             <span className="text-sm lg:text-base">Agendar demonstração gratuita</span>
           </Button>
-          <p className={theme === 'white-piano-premium' ?
+          <p className={theme === 'light' ?
             "text-foreground/70 text-xs sm:text-sm px-4" :
             "text-luxury-ivory/70 text-xs sm:text-sm px-4"
           }>

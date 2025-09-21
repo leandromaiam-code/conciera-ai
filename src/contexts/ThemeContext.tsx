@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
-type Theme = 'default' | 'white-piano-premium';
+type Theme = 'light' | 'dark';
 
 interface ThemeContextType {
   theme: Theme;
@@ -19,15 +19,15 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>('default');
+  const [theme, setTheme] = useState<Theme>('light');
 
   const toggleTheme = () => {
-    setTheme(prev => prev === 'default' ? 'white-piano-premium' : 'default');
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>
-      <div className={theme === 'white-piano-premium' ? 'theme-white-piano' : ''}>
+      <div className={theme === 'light' ? 'theme-white-piano' : ''}>
         {children}
       </div>
     </ThemeContext.Provider>

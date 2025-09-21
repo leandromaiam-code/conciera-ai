@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -7,7 +7,7 @@ import logoImage from "@/assets/logo-conciera.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     { name: "Início", href: "/" },
@@ -41,18 +41,22 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            {/* Hidden Premium Theme Button */}
-            <button
-              onClick={toggleTheme}
-              className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm opacity-0 hover:opacity-100"
-              title="Layout Branco Premium"
-            >
-              Layout Branco Premium
-            </button>
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-3">
+            {/* Dark Mode Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              title="Alternar tema"
+            >
+              {theme === 'light' ? (
+                <Moon className="w-4 h-4" />
+              ) : (
+                <Sun className="w-4 h-4" />
+              )}
+            </button>
             <Button variant="outline_gold" size="sm">
               <Phone className="w-3 h-3 mr-1" />
               WhatsApp
@@ -91,6 +95,23 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
+                {/* Mobile Dark Mode Toggle */}
+                <button
+                  onClick={toggleTheme}
+                  className="flex items-center justify-center w-full px-3 py-3 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {theme === 'light' ? (
+                    <>
+                      <Moon className="w-4 h-4 mr-2" />
+                      Modo Escuro
+                    </>
+                  ) : (
+                    <>
+                      <Sun className="w-4 h-4 mr-2" />
+                      Modo Claro
+                    </>
+                  )}
+                </button>
                 <Button variant="outline_gold" size="default" className="w-full h-11">
                   <Phone className="w-4 h-4 mr-2" />
                   WhatsApp
