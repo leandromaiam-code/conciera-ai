@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useTheme } from "@/contexts/ThemeContext";
+import logoImage from "@/assets/logo-conciera.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { toggleTheme } = useTheme();
 
   const navItems = [
     { name: "Início", href: "/" },
@@ -21,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img 
-              src="/src/assets/logo-conciera.png" 
+              src={logoImage} 
               alt="Conciera Logo" 
               className="h-6 sm:h-7 lg:h-8 w-auto"
             />
@@ -38,6 +41,14 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            {/* Hidden Premium Theme Button */}
+            <button
+              onClick={toggleTheme}
+              className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm opacity-0 hover:opacity-100"
+              title="Layout Branco Premium"
+            >
+              Layout Branco Premium
+            </button>
           </nav>
 
           {/* Desktop CTA */}

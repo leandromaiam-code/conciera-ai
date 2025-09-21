@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import footerLogo from "@/assets/conciera-footer-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -26,9 +27,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h3 className="text-3xl font-serif font-bold mb-4">
-                CONCIERA<span className="text-luxury-gold">™</span>
-              </h3>
+              <img 
+                src={footerLogo} 
+                alt="Conciera Logo" 
+                className="h-12 w-auto mb-4"
+              />
               <p className="text-luxury-ivory/80 leading-relaxed max-w-md">
                 Sistema operacional de receita para clínicas de elite. 
                 Transformamos atendimento em conversão com inteligência artificial 

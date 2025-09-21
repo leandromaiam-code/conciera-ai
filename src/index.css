@@ -33,6 +33,14 @@ All colors MUST be HSL.
     --luxury-gold: 45 76% 58%; /* Ouro premium */
     --luxury-marble: 210 13% 95%; /* Mármore */
     --luxury-ivory: 48 15% 96%; /* Marfim */
+
+    /* White Piano Premium Theme Variables */
+    --premium-white: 0 0% 100%;
+    --premium-navy: 216 28% 12%;
+    --premium-gold: 42 65% 60%;
+    --premium-pearl: 210 20% 97%;
+    --premium-slate: 216 12% 84%;
+    --premium-charcoal: 216 19% 16%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 48 15% 96%;
@@ -120,6 +128,29 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* White Piano Premium Theme */
+  .theme-white-piano {
+    --background: var(--premium-white);
+    --foreground: var(--premium-navy);
+    --primary: var(--premium-navy);
+    --primary-foreground: var(--premium-white);
+    --secondary: var(--premium-pearl);
+    --secondary-foreground: var(--premium-navy);
+    --muted: var(--premium-slate);
+    --muted-foreground: var(--premium-charcoal);
+    --accent: var(--premium-gold);
+    --accent-foreground: var(--premium-navy);
+    --card: var(--premium-white);
+    --card-foreground: var(--premium-navy);
+    --popover: var(--premium-white);
+    --popover-foreground: var(--premium-navy);
+    --border: var(--premium-slate);
+    --input: var(--premium-slate);
+    --luxury-gold: var(--premium-gold);
+    --luxury-marble: var(--premium-pearl);
+    --luxury-ivory: var(--premium-navy);
   }
 
   /* Luxury Typography */
