@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
 import footerLogo from "@/assets/conciera-logo.png";
-import footerLogoWhite from "@/assets/conciera-footer-logo-white.png";
+import footerLogoWhite from "@/assets/conciera-logo.png";
 
 const Footer = () => {
   const { theme } = useTheme();
