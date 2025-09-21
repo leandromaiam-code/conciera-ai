@@ -1,5 +1,6 @@
 import { MessageCircle, Brain, CreditCard, Calendar, Users, BarChart3, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
 const HowItWorks = () => {
   const steps = [
@@ -47,12 +48,20 @@ const HowItWorks = () => {
     }
   ];
 
+  const { ref: headerRef, isInView: headerInView } = useIntersectionObserver();
+  const { ref: stepsRef, visibleItems, isInView: stepsInView } = useStaggeredAnimation(steps, 150);
+
   return (
-    <section id="como-funciona" className="py-24 bg-background">
+    <section id="como-funciona" className="py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-up">
+        <div 
+          ref={headerRef}
+          className={`text-center mb-16 transition-all duration-700 ${
+            headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
             Como Funciona
           </h2>
@@ -61,42 +70,42 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Timeline */}
-        <div className="max-w-4xl mx-auto">
+        {/* Linear Timeline - Left Aligned */}
+        <div className="max-w-4xl mx-auto" ref={stepsRef}>
           <div className="relative">
             
             {/* Vertical Line */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-luxury-gold/50 to-luxury-gold/10 h-full"></div>
+            <div className="absolute left-8 top-0 w-0.5 bg-gradient-to-b from-luxury-gold/80 via-luxury-gold/40 to-luxury-gold/10 h-full"></div>
             
-            <div className="space-y-12">
+            <div className="space-y-8">
               {steps.map((step, index) => (
                 <div 
                   key={index}
-                  className={`flex items-center animate-fade-up ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  className={`flex items-start space-x-6 transition-all duration-700 ${
+                    visibleItems.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ transitionDelay: `${index * 150}ms` }}
                 >
                   
-                  {/* Content */}
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'} text-center md:text-inherit`}>
-                    <h3 className="text-xl font-serif font-bold text-primary mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-
                   {/* Step Circle */}
-                  <div className="relative z-10 w-16 h-16 bg-background rounded-full shadow-luxury flex items-center justify-center border-4 border-luxury-gold/20 mx-8 md:mx-0 flex-shrink-0">
+                  <div className="relative z-10 w-16 h-16 bg-background rounded-full shadow-luxury flex items-center justify-center border-4 border-luxury-gold/30 flex-shrink-0 hover-3d">
                     <span className="text-lg font-serif font-bold text-luxury-gold">{step.number}</span>
                   </div>
 
-                  {/* Icon */}
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:pl-8 md:text-left' : 'md:pr-8 md:text-right'} text-center md:text-inherit`}>
-                    <div className="text-luxury-gold flex justify-center md:justify-start">
-                      {step.icon}
+                  {/* Content */}
+                  <div className="flex-1 pt-2">
+                    <div className="flex items-start space-x-4">
+                      <div className="text-luxury-gold flex-shrink-0">
+                        {step.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-serif font-bold text-primary mb-2">
+                          {step.title}
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -106,9 +115,11 @@ const HowItWorks = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16 animate-fade-up [animation-delay:800ms]">
-          <Button variant="gold" size="xl">
-            Agendar minha demo gratuita
+        <div className={`text-center mt-16 transition-all duration-700 delay-1000 ${
+          stepsInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'  
+        }`}>
+          <Button variant="gold" size="xl" className="hover-glow animate-magnetic">
+            Quero ver isso funcionando na prática
           </Button>
         </div>
       </div>

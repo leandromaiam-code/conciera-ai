@@ -30,8 +30,8 @@ const HeroSection = () => {
         {/* Main Headline */}
         <div className="mb-8 lg:mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
           <h1 className={theme === 'light' ? 
-            "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-foreground mb-6 lg:mb-8 leading-tight" :
-            "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-luxury-ivory mb-6 lg:mb-8 leading-tight"
+            "text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-foreground mb-6 lg:mb-8 leading-[1.1]" :
+            "text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-luxury-ivory mb-6 lg:mb-8 leading-[1.1]"
           }>
             Transforme conversas em receita
           </h1>
@@ -45,15 +45,21 @@ const HeroSection = () => {
 
         {/* CTA + Social Proof */}
         <div className="animate-fade-up [animation-delay:400ms] opacity-0">
-          <Button variant="gold" size="lg" className="hover-glow mb-4 lg:mb-6 h-12 lg:h-14 px-6 lg:px-8">
-            <Calendar className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
-            <span className="text-sm lg:text-base">Agendar demonstração gratuita</span>
+          <Button variant="gold" size="xl" className="hover-glow animate-breathe mb-4 lg:mb-6 h-14 lg:h-16 px-8 lg:px-12 text-base lg:text-lg font-semibold">
+            <Calendar className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
+            <span>Garantir Minha Demonstração Gratuita</span>
           </Button>
           <p className={theme === 'light' ?
-            "text-foreground/70 text-xs sm:text-sm px-4" :
-            "text-luxury-ivory/70 text-xs sm:text-sm px-4"
+            "text-foreground/70 text-sm sm:text-base px-4 mb-2" :
+            "text-luxury-ivory/70 text-sm sm:text-base px-4 mb-2"
           }>
-            Clínicas de alto padrão já podem aumentar imediatamente a conversão com a CONCIERA.
+            <span className="text-luxury-gold font-semibold">+ de 150 clínicas</span> de alto padrão já aumentaram sua conversão
+          </p>
+          <p className={theme === 'light' ?
+            "text-foreground/60 text-xs sm:text-sm px-4" :
+            "text-luxury-ivory/60 text-xs sm:text-sm px-4"
+          }>
+            ⚡ Demonstração gratuita • 🚀 Sem compromisso • ⏰ Vagas limitadas para este mês
           </p>
         </div>
       </div>

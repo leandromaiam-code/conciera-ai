@@ -1,5 +1,6 @@
 import { TrendingUp, Calendar, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
 const MainBenefits = () => {
   const benefits = [
@@ -20,19 +21,24 @@ const MainBenefits = () => {
     }
   ];
 
+  const { ref: headerRef, isInView: headerInView } = useIntersectionObserver();
+  const { ref: benefitsRef, visibleItems } = useStaggeredAnimation(benefits, 200);
+
   return (
-    <section className="py-24 bg-background">
+    <section className="py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div ref={benefitsRef} className="grid md:grid-cols-3 gap-8 mb-16">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="text-center p-8 rounded-3xl bg-gradient-to-br from-background to-muted/20 hover:shadow-luxury transition-all duration-300 hover:-translate-y-2 animate-fade-up"
-              style={{ animationDelay: `${index * 150}ms` }}
+              className={`text-center p-8 rounded-3xl glass hover:shadow-depth transition-all duration-500 hover-3d ${
+                visibleItems.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <div className="text-luxury-gold mb-6 flex justify-center">
+              <div className="text-luxury-gold mb-6 flex justify-center animate-glow-pulse">
                 {benefit.icon}
               </div>
               <h3 className="text-2xl font-serif font-bold text-primary mb-4">
@@ -46,9 +52,14 @@ const MainBenefits = () => {
         </div>
 
         {/* Secondary CTA */}
-        <div className="text-center animate-fade-up [animation-delay:600ms]">
-          <Button variant="outline_gold" size="lg">
-            Quero ver na prática
+        <div 
+          ref={headerRef}
+          className={`text-center transition-all duration-700 delay-600 ${
+            headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          <Button variant="outline_gold" size="lg" className="hover-magnetic">
+            Quero ver na prática como funciona
           </Button>
         </div>
       </div>
