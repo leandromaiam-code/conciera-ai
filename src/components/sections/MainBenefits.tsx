@@ -58,7 +58,7 @@ const MainBenefits = () => {
             headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <Button variant="outline_gold" size="lg" className="hover-magnetic">
+          <Button variant="outline_gold" size="lg" className="hover-magnetic mx-4 sm:mx-0">
             Quero ver na prática como funciona
           </Button>
         </div>

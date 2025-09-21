@@ -36,12 +36,12 @@ const FinalCTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button variant="gold" size="xl" className="hover-glow animate-breathe hover-magnetic">
+            <Button variant="gold" size="xl" className="hover-glow animate-breathe hover-magnetic mx-4 sm:mx-0">
               <Calendar className="mr-2 h-5 w-5" />
               Garantir Minha Demonstração Premium
             </Button>
             
-            <Button variant="outline_gold" size="xl" className="hover-lift">
+            <Button variant="outline_gold" size="xl" className="hover-lift mx-4 sm:mx-0">
               Ver Planos e Investimento
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -105,7 +105,7 @@ const FinalCTA = () => {
                 <option value="odontologia">Odontologia</option>
                 <option value="outros">Outros</option>
               </select>
-              <Button variant="gold" className="w-full hover-magnetic">
+              <Button variant="gold" className="w-full hover-magnetic mx-4 sm:mx-0">
                 Solicitar Contato Prioritário
               </Button>
             </div>

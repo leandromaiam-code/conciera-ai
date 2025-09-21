@@ -140,7 +140,7 @@ const PlansSection = () => {
               <Button 
                 variant={plan.highlight ? "hero" : "outline_gold"} 
                 size="lg" 
-                className="w-full hover-glow"
+                className="w-full hover-glow mx-4 sm:mx-0"
               >
                 {plan.exclusive ? "Solicitar Elegibilidade" : "Solicitar Proposta"}
               </Button>
@@ -153,7 +153,7 @@ const PlansSection = () => {
           <p className="text-muted-foreground mb-6">
             Demonstração de 15 minutos • Sem custo • Resultados garantidos
           </p>
-          <Button variant="gold" size="xl" className="hover-glow">
+          <Button variant="gold" size="xl" className="hover-glow mx-4 sm:mx-0">
             Agendar Demonstração Gratuita
           </Button>
         </div>

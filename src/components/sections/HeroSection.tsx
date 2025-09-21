@@ -8,8 +8,8 @@ const HeroSection = () => {
   
   return (
     <section className={theme === 'light' ? 
-      "relative min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] pt-12 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
-      "relative min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] pt-12 lg:pt-16 flex items-center justify-center overflow-hidden"
+      "relative min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] pt-8 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
+      "relative min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] pt-8 lg:pt-16 flex items-center justify-center overflow-hidden"
     }>
       {/* Background Image with Overlay */}
       {theme !== 'light' && (
@@ -24,7 +24,7 @@ const HeroSection = () => {
       )}
       
       {/* Content */}
-      <div className="relative z-10 text-center px-3 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-6 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         
 
         {/* Main Headline */}
@@ -36,8 +36,8 @@ const HeroSection = () => {
             Transforme conversas em receita
           </h1>
           <p className={theme === 'light' ?
-            "text-base sm:text-lg lg:text-xl xl:text-2xl text-foreground/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto" :
-            "text-base sm:text-lg lg:text-xl xl:text-2xl text-luxury-ivory/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto"
+            "text-lg sm:text-lg lg:text-xl xl:text-2xl text-foreground/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto" :
+            "text-lg sm:text-lg lg:text-xl xl:text-2xl text-luxury-ivory/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto"
           }>
             A Conciera é a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar conexão, qualificar os leads e agendar consultas 24/07.
           </p>
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
         {/* CTA + Social Proof */}
         <div className="animate-fade-up [animation-delay:400ms] opacity-0">
-          <Button variant="gold" size="xl" className="hover-glow animate-breathe mb-4 lg:mb-6 h-14 lg:h-16 px-8 lg:px-12 text-base lg:text-lg font-semibold">
+          <Button variant="gold" size="xl" className="hover-glow animate-breathe mb-4 lg:mb-6 h-14 lg:h-16 px-8 lg:px-12 text-base lg:text-lg font-semibold mx-4 sm:mx-0">
             <Calendar className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
             <span>Garantir Minha Demonstração Gratuita</span>
           </Button>
