@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-video-bg.jpg";
+import conciergaLogo from "@/assets/conciera-logo-new.png";
 
 const HeroSection = () => {
   return (
@@ -18,29 +19,34 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         
-        {/* Logo/Brand */}
-        <div className="mb-8 animate-fade-up">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold text-luxury-ivory mb-4">
-            CONCIERA<span className="text-luxury-gold">™</span>
-          </h1>
+        {/* Logo */}
+        <div className="mb-12 animate-fade-up">
+          <img 
+            src={conciergaLogo} 
+            alt="CONCIERA" 
+            className="h-16 md:h-20 lg:h-24 mx-auto mb-8"
+          />
         </div>
 
         {/* Main Headline */}
-        <div className="mb-8 animate-fade-up [animation-delay:200ms] opacity-0">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-luxury-ivory/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Concierge de IA para Clínicas Premium
-          </h2>
-          <p className="text-lg md:text-xl text-luxury-gold font-medium leading-relaxed">
-            Transforme atendimento em receita, 24/7
+        <div className="mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-luxury-ivory mb-8 leading-tight">
+            O concierge de IA humanizado que transforma leads em pacientes e pacientes em receita
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl text-luxury-ivory/90 leading-relaxed max-w-5xl mx-auto">
+            Acolhe, qualifica, agenda, recebe e acompanha cada paciente antes e depois do procedimento — 24/7, via WhatsApp, Instagram, site e telefone — em uma linguagem natural e alinhada ao seu branding.
           </p>
         </div>
 
-        {/* Single CTA */}
+        {/* CTA + Social Proof */}
         <div className="animate-fade-up [animation-delay:400ms] opacity-0">
-          <Button variant="gold" size="xl" className="hover-glow">
-            <Play className="mr-2 h-5 w-5" />
-            Ver Demonstração
+          <Button variant="gold" size="xl" className="hover-glow mb-6">
+            <Calendar className="mr-2 h-5 w-5" />
+            Agendar demonstração gratuita
           </Button>
+          <p className="text-luxury-ivory/70 text-sm">
+            Clínicas de alto padrão já aumentaram conversão e reduziram faltas com a CONCIERA.
+          </p>
         </div>
       </div>
     </section>
