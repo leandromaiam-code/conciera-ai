@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
-import footerLogo from "@/assets/conciera-footer-logo.png";
+import footerLogo from "@/assets/conciera-logo.png";
 import footerLogoWhite from "@/assets/conciera-footer-logo-white.png";
 
 const Footer = () => {
