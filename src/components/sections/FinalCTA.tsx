@@ -25,7 +25,7 @@ const FinalCTA = () => {
             Agendar Demonstração
           </Button>
           
-          <Button variant="outline" size="xl" className="hover-lift mx-6 sm:mx-0">
+          <Button variant="outline_gold" size="xl" className="hover-lift mx-6 sm:mx-0">
             Ver Planos e Preços
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>

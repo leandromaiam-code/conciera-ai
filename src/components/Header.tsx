@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
 import logoImage from "@/assets/logo-conciera.png";
+import logoWhite from "@/assets/conciera-footer-logo-white.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img 
-              src={logoImage} 
+              src={theme === 'light' ? logoImage : logoWhite} 
               alt="Conciera Logo" 
               className="h-6 sm:h-7 lg:h-8 w-auto"
             />
