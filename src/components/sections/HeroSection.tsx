@@ -11,6 +11,7 @@ const HeroSection = () => {
       "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-8 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
       "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-8 lg:pt-16 flex items-center justify-center overflow-hidden bg-background"
     }>
+
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 sm:px-6 lg:px-8 max-w-6xl mx-auto">
