@@ -22,9 +22,6 @@ const Authority = () => {
                   />
                   <div className="absolute inset-0 rounded-full ring-2 ring-luxury-gold/30 ring-offset-4 ring-offset-background"></div>
                 </div>
-                <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mb-6">
-                  <Award className="w-8 h-8 text-luxury-gold" />
-                </div>
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-serif text-primary leading-relaxed mb-8">
