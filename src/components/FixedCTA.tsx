@@ -20,14 +20,6 @@ const FixedCTA = () => {
 
   return (
     <>
-      {/* Main CTA Button - Top 
-      <div className="fixed top-4 right-4 z-50 animate-fade-in">
-        <Button variant="gold" size="sm" className="shadow-lg hover-glow">
-          <Calendar className="mr-2 h-4 w-4" />
-          Agendar Demo
-        </Button>
-      </div>*/}
-
       {/* WhatsApp Float Button - Bottom Right */}
       <div className="fixed bottom-6 right-6 z-50">
         <div className="relative">
