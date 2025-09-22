@@ -59,7 +59,7 @@ const MainBenefits = () => {
           }`}
         >
           <Button variant="outline_gold" size="lg" className="hover-magnetic mx-6 sm:mx-0">
-            Quero ver na prática como funciona
+            Quero ver como funciona
           </Button>
         </div>
       </div>

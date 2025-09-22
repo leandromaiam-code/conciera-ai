@@ -108,7 +108,7 @@ const PlansOverview = () => {
           headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           <Button variant="gold" size="xl" className="hover-magnetic mx-6 sm:mx-0">
-            Agendar minha demonstração gratuita
+            Agendar demonstração
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
             💎 Apresentação personalizada para clínicas premium • 🎯 Análise gratuita do seu negócio

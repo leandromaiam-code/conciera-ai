@@ -119,7 +119,7 @@ const HowItWorks = () => {
           stepsInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'  
         }`}>
           <Button variant="gold" size="xl" className="hover-glow mx-6 sm:mx-0">
-            Quero ver isso funcionando na prática
+            Quero ver na prática
           </Button>
         </div>
       </div>
