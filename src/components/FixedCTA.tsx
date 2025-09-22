@@ -21,7 +21,7 @@ const FixedCTA = () => {
   return (
     <>
       {/* WhatsApp Float Button - Bottom Right */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-0 right-6 z-50">
         <div className="relative">
           {/* WhatsApp Expandable Content */}
           {showWhatsApp && (
