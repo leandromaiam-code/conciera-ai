@@ -30,8 +30,8 @@ const HeroSection = () => {
         {/* Main Headline */}
         <div className="mb-8 lg:mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
           <h1 className={theme === 'light' ? 
-            "text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-foreground mb-6 lg:mb-8 leading-tight" :
-            "text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-luxury-ivory mb-6 lg:mb-8 leading-tight"
+            "text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-foreground mb-10 lg:mb-14 leading-tight" :
+            "text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-luxury-ivory mb-10 lg:mb-14 leading-tight"
           }>
             Transforme conversas em receita
           </h1>
