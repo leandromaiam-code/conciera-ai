@@ -50,7 +50,7 @@ const FixedCTA = () => {
                 variant="outline" 
                 size="sm" 
                 className="w-full text-green-600 border-green-600 hover:bg-green-50"
-                onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                onClick={() => window.open('https://wa.me/553171701177', '_blank')}
               >
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Abrir WhatsApp
@@ -73,7 +73,7 @@ const FixedCTA = () => {
         <div className="bg-background border-t border-border p-4">
           <Button variant="gold" size="lg" className="w-full">
             <Calendar className="mr-2 h-5 w-5" />
-            Agendar Demo
+            Agendar Demo Gratuita
           </Button>
         </div>
       </div>
