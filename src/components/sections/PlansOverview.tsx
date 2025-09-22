@@ -1,6 +1,5 @@
 import { Zap, Target, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
 const PlansOverview = () => {
   const plans = [
@@ -27,54 +26,41 @@ const PlansOverview = () => {
     }
   ];
 
-  const { ref: headerRef, isInView: headerInView } = useIntersectionObserver();
-  const { ref: plansRef, visibleItems } = useStaggeredAnimation(plans, 200);
-
   return (
-    <section className="py-16 lg:py-20 bg-gradient-marble">
+    <section className="py-24 bg-gradient-marble">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div 
-          ref={headerRef}
-          className={`text-center mb-16 transition-all duration-700 ${
-            headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
+        <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
             Soluções sob medida para cada clínica
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
-            Cada clínica tem necessidades diferentes. Por isso, a CONCIERA foi desenhada em 3 versões escaláveis.
-          </p>
-          <p className="text-sm text-luxury-gold font-semibold">
-            ⚡ Vagas limitadas para demonstrações personalizadas neste mês
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Cada clínica tem necessidades diferentes. Por isso, a CONCIERA foi desenhada em 3 versões escaláveis — apresentadas em detalhes durante a demonstração personalizada.
           </p>
         </div>
 
         {/* Plans Grid */}
-        <div ref={plansRef} className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`relative p-8 rounded-3xl transition-all duration-500 hover-3d ${
+              className={`relative p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 animate-fade-up ${
                 plan.highlight 
-                  ? 'bg-background shadow-glow-gold border-2 border-luxury-gold/30 animate-breathe' 
-                  : 'glass hover:shadow-depth'
-              } ${
-                visibleItems.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                  ? 'bg-background shadow-luxury border-2 border-luxury-gold/30' 
+                  : 'bg-background/60 hover:bg-background/80 hover:shadow-marble'
               }`}
-              style={{ transitionDelay: `${index * 200}ms` }}
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               {plan.highlight && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 animate-glow-pulse">
-                  <span className="bg-luxury-gold text-background px-6 py-2 rounded-full text-sm font-semibold shadow-gold">
-                    🏆 Mais Popular
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-luxury-gold text-background px-4 py-2 rounded-full text-sm font-semibold">
+                    Mais Popular
                   </span>
                 </div>
               )}
               
-              <div className="text-luxury-gold mb-6 flex justify-center animate-glow-pulse">
+              <div className="text-luxury-gold mb-6 flex justify-center">
                 {plan.icon}
               </div>
               
@@ -96,7 +82,7 @@ const PlansOverview = () => {
                   size="lg" 
                   className="w-full"
                 >
-                  {plan.highlight ? 'Garantir Demonstração' : 'Ver Demonstração'}
+                  Agendar demonstração
                 </Button>
               </div>
             </div>
@@ -104,15 +90,10 @@ const PlansOverview = () => {
         </div>
 
         {/* CTA */}
-        <div className={`text-center transition-all duration-700 delay-600 ${
-          headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          <Button variant="gold" size="xl" className="mx-6 sm:mx-0">
+        <div className="text-center animate-fade-up [animation-delay:600ms]">
+          <Button variant="gold" size="xl">
             Agendar minha demonstração gratuita
           </Button>
-          <p className="text-sm text-muted-foreground mt-4">
-            💎 Apresentação personalizada para clínicas premium • 🎯 Análise gratuita do seu negócio
-          </p>
         </div>
       </div>
     </section>

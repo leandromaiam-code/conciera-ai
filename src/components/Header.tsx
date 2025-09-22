@@ -1,18 +1,16 @@
 import { useState } from "react";
-import { Menu, X, Phone, Sun, Moon } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { useTheme } from "@/contexts/ThemeContext";
-import logoImage from "@/assets/logo-conciera.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     { name: "Início", href: "/" },
+    { name: "Como Funciona", href: "/#como-funciona" },
     { name: "Planos", href: "/planos" },
-    { name: "Blog", href: "/#authority" },
+    { name: "Sobre", href: "/#sobre" },
   ];
 
   return (
@@ -23,41 +21,32 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img 
-              src={logoImage} 
+              src="/src/assets/Logo-Conciera.png" 
               alt="Conciera Logo" 
               className="h-6 sm:h-7 lg:h-8 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="relative text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-sm py-2 px-1 group"
+                className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm"
               >
                 {item.name}
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-luxury-gold to-luxury-gold/60 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               </Link>
             ))}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            {/* Dark Mode Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 rounded-full hover:bg-accent/50"
-              title="Alternar tema"
-            >
-              {theme === 'light' ? (
-                <Moon className="w-4 h-4" />
-              ) : (
-                <Sun className="w-4 h-4" />
-              )}
-            </button>
-            <Button variant="gold" size="default" className="shadow-luxury hover:shadow-luxury-glow transition-all duration-300">
+          <div className="hidden lg:flex items-center space-x-3">
+            <Button variant="outline_gold" size="sm">
+              <Phone className="w-3 h-3 mr-1" />
+              WhatsApp
+            </Button>
+            <Button variant="gold" size="default">
               Agendar Demo
             </Button>
           </div>
@@ -91,23 +80,10 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
-                {/* Mobile Dark Mode Toggle */}
-                <button
-                  onClick={toggleTheme}
-                  className="flex items-center justify-center w-full px-3 py-3 text-muted-foreground hover:text-primary transition-colors rounded-lg hover:bg-accent/50"
-                >
-                  {theme === 'light' ? (
-                    <>
-                      <Moon className="w-4 h-4 mr-2" />
-                      Modo Escuro
-                    </>
-                  ) : (
-                    <>
-                      <Sun className="w-4 h-4 mr-2" />
-                      Modo Claro
-                    </>
-                  )}
-                </button>
+                <Button variant="outline_gold" size="default" className="w-full h-11">
+                  <Phone className="w-4 h-4 mr-2" />
+                  WhatsApp
+                </Button>
                 <Button variant="gold" size="default" className="w-full h-11">
                   Agendar Demo
                 </Button>

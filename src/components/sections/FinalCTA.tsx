@@ -14,12 +14,12 @@ const FinalCTA = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="gold" size="xl" className="hover-glow mx-6 sm:mx-0">
+          <Button variant="gold" size="xl" className="hover-glow">
             <Calendar className="mr-2 h-5 w-5" />
             Agendar Demonstração Gratuita
           </Button>
           
-          <Button variant="outline" size="xl" className="hover-lift mx-6 sm:mx-0">
+          <Button variant="outline" size="xl" className="hover-lift">
             Ver Planos e Preços
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -28,7 +28,7 @@ const FinalCTA = () => {
         {/* Simple Contact Form Preview */}
         <div className="max-w-md mx-auto">
           <p className="text-sm text-muted-foreground mb-4">
-            Ou deixe seu contato que retornamos para agendar sua demonstração.
+            Ou deixe seu contato que retornamos em até 2 horas
           </p>
           <div className="bg-background rounded-lg p-6 shadow-lg border border-border">
             <div className="space-y-4">

@@ -1,6 +1,5 @@
 import { TrendingUp, UserCheck, DollarSign, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
 const Results = () => {
   const results = [
@@ -18,7 +17,7 @@ const Results = () => {
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      percentage: "50%",
+      percentage: "+",
       title: "Mais receita",
       description: "aumentar faturamento ao integrar agendamento + pagamento no mesmo fluxo."
     },
@@ -36,21 +35,12 @@ const Results = () => {
     "Uma clínica premium que gastava tempo treinando recepcionistas passa a ter atendimento padronizado, sem pausas, férias ou turnover."
   ];
 
-  const { ref: headerRef, isInView: headerInView } = useIntersectionObserver();
-  const { ref: resultsRef, visibleItems } = useStaggeredAnimation(results, 150);
-  const { ref: examplesRef, isInView: examplesInView } = useIntersectionObserver();
-
   return (
-    <section className="py-16 lg:py-20 bg-background">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div 
-          ref={headerRef}
-          className={`text-center mb-16 transition-all duration-700 ${
-            headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
+        <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Resultados Possíveis
           </h2>
@@ -60,19 +50,17 @@ const Results = () => {
         </div>
 
         {/* Results Grid */}
-        <div ref={resultsRef} className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {results.map((result, index) => (
             <div 
               key={index}
-              className={`text-center p-6 rounded-2xl glass hover:shadow-glow-gold transition-all duration-500 hover-3d ${
-                visibleItems.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
+              className="text-center p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-luxury-gold/5 hover:shadow-luxury transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="text-luxury-gold mb-4 flex justify-center animate-glow-pulse">
+              <div className="text-luxury-gold mb-4 flex justify-center">
                 {result.icon}
               </div>
-              <div className="text-4xl font-bold text-gradient mb-2 animate-breathe">
+              <div className="text-4xl font-bold text-luxury-gold mb-2">
                 {result.percentage}
               </div>
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -86,12 +74,7 @@ const Results = () => {
         </div>
 
         {/* Examples */}
-        <div 
-          ref={examplesRef}
-          className={`bg-gradient-marble rounded-3xl p-8 md:p-12 mb-12 glass transition-all duration-700 ${
-            examplesInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
+        <div className="bg-gradient-marble rounded-3xl p-8 md:p-12 mb-12 animate-fade-up [animation-delay:600ms]">
           <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-8 text-center">
             Exemplos práticos:
           </h3>
@@ -99,12 +82,10 @@ const Results = () => {
             {examples.map((example, index) => (
               <div 
                 key={index}
-                className={`flex items-start space-x-4 transition-all duration-500 ${
-                  examplesInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-                }`}
-                style={{ transitionDelay: `${index * 200 + 300}ms` }}
+                className="flex items-start space-x-4 animate-fade-up"
+                style={{ animationDelay: `${index * 150 + 800}ms` }}
               >
-                <div className="w-2 h-2 bg-luxury-gold rounded-full mt-3 flex-shrink-0 animate-glow-pulse"></div>
+                <div className="w-2 h-2 bg-luxury-gold rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   {example}
                 </p>
@@ -114,11 +95,9 @@ const Results = () => {
         </div>
 
         {/* CTA */}
-        <div className={`text-center transition-all duration-700 delay-1000 ${
-          examplesInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'  
-        }`}>
-          <Button variant="gold" size="xl" className="hover-glow mx-6 sm:mx-0">
-            Quero esses resultados na minha clínica
+        <div className="text-center animate-fade-up [animation-delay:1200ms]">
+          <Button variant="gold" size="xl">
+            Quero ver como funciona na prática
           </Button>
         </div>
       </div>

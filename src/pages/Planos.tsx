@@ -191,7 +191,7 @@ const Planos = () => {
                 </div>
               </div>
               
-              <Button variant="gold" size="lg" className="mt-8 mx-6 sm:mx-0">
+              <Button variant="gold" size="lg" className="mt-8">
                 Calcular Meu ROI
               </Button>
             </div>
@@ -207,7 +207,7 @@ const Planos = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Agende uma demonstração personalizada e veja a Conciera em ação na sua clínica
             </p>
-            <Button variant="gold" size="xl" className="mx-6 sm:mx-0">
+            <Button variant="gold" size="xl">
               Agendar Demonstração Gratuita
             </Button>
           </div>

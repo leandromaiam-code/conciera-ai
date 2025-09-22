@@ -1,30 +1,18 @@
 import { Award, Star, Users } from "lucide-react";
 
-import jpNotiniPhoto from "@/assets/jp-notini-photo.png";
-
 const Authority = () => {
   return (
-    <section id="authority" className="py-24 bg-background">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Content */}
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
           <div className="bg-gradient-marble rounded-3xl p-8 md:p-12 shadow-luxury">
             
-            {/* JP Notini Photo and Quote */}
+            {/* Quote */}
             <div className="mb-8">
-              <div className="flex flex-col items-center mb-8">
-                <div className="w-32 h-32 mb-6 relative">
-                  <img 
-                    src={jpNotiniPhoto} 
-                    alt="JP Notini - Especialista em Inteligência de Conversão" 
-                    className="w-full h-full object-cover rounded-full border-4 border-luxury-gold/20 shadow-elegant"
-                  />
-                  <div className="absolute inset-0 rounded-full ring-2 ring-luxury-gold/30 ring-offset-4 ring-offset-background"></div>
-                </div>
-                <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mb-6">
-                  <Award className="w-8 h-8 text-luxury-gold" />
-                </div>
+              <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-luxury-gold" />
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-serif text-primary leading-relaxed mb-8">
