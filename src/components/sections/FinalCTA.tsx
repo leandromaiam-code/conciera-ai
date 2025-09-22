@@ -8,7 +8,7 @@ const FinalCTA = () => {
   return (
     <section className={theme === 'light' ? 
       "py-20 bg-gradient-to-br from-primary/5 to-luxury-gold/5" :
-      "py-20 bg-gradient-to-br from-primary/10 to-accent/10"
+      "py-20 bg-gradient-to-br from-background to-secondary/20"
     }>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">

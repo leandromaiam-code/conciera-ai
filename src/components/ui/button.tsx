@@ -16,9 +16,9 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Conciera luxury variants
-        hero: "bg-primary text-luxury-ivory hover:bg-primary/90 shadow-luxury hover:shadow-gold transition-all duration-300",
-        gold: "bg-gradient-gold text-primary hover:shadow-gold transition-all duration-300 font-semibold",
-        outline_gold: "border-2 border-luxury-gold bg-transparent text-black hover:bg-luxury-gold hover:text-primary transition-all duration-300",
+        hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-luxury hover:shadow-gold transition-all duration-300",
+        gold: "bg-gradient-gold text-black hover:shadow-gold transition-all duration-300 font-semibold",
+        outline_gold: "border-2 border-luxury-gold bg-transparent text-foreground hover:bg-luxury-gold hover:text-black transition-all duration-300",
         marble: "bg-gradient-marble text-primary hover:shadow-marble transition-all duration-300 border border-border/20",
       },
       size: {
