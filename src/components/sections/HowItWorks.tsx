@@ -118,7 +118,7 @@ const HowItWorks = () => {
         <div className={`text-center mt-16 transition-all duration-700 delay-1000 ${
           stepsInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'  
         }`}>
-          <Button variant="gold" size="xl" className="hover-glow animate-magnetic mx-6 sm:mx-0">
+          <Button variant="gold" size="xl" className="hover-glow mx-6 sm:mx-0">
             Quero ver isso funcionando na prática
           </Button>
         </div>

@@ -59,7 +59,7 @@ const Differentials = () => {
 
         {/* CTA */}
         <div className="text-center animate-fade-up [animation-delay:800ms]">
-          <Button variant="gold" size="lg" className="mx-4 sm:mx-0">
+          <Button variant="gold" size="lg" className="mx-6 sm:mx-0">
             Descubra como funciona
           </Button>
         </div>

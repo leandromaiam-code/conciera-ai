@@ -14,12 +14,12 @@ const FinalCTA = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="gold" size="xl" className="hover-glow">
+          <Button variant="gold" size="xl" className="hover-glow mx-6 sm:mx-0">
             <Calendar className="mr-2 h-5 w-5" />
             Agendar Demonstração Gratuita
           </Button>
           
-          <Button variant="outline" size="xl" className="hover-lift">
+          <Button variant="outline" size="xl" className="hover-lift mx-6 sm:mx-0">
             Ver Planos e Preços
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -47,7 +47,7 @@ const FinalCTA = () => {
                 placeholder="Nome da clínica"
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold/50"
               />
-              <Button variant="gold" className="w-full">
+              <Button variant="gold" className="w-full mx-6 sm:mx-0">
                 Solicitar Contato
               </Button>
             </div>

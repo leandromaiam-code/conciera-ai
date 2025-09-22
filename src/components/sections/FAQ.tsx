@@ -67,7 +67,7 @@ const FAQ = () => {
 
         {/* CTA */}
         <div className="text-center animate-fade-up [animation-delay:600ms]">
-          <Button variant="gold" size="xl" className="mx-4 sm:mx-0">
+          <Button variant="gold" size="xl" className="mx-6 sm:mx-0">
             Agendar demonstração gratuita
           </Button>
         </div>
