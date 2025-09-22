@@ -27,7 +27,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>
-      <div className={theme === 'light' ? 'theme-white-piano' : ''}>
+      <div className={theme === 'light' ? 'theme-white-piano' : 'dark'}>
         {children}
       </div>
     </ThemeContext.Provider>
