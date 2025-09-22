@@ -61,7 +61,7 @@ const FixedCTA = () => {
           {/* WhatsApp Button */}
           <button
             onClick={() => setShowWhatsApp(!showWhatsApp)}
-            className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 animate-[pulse_10s_ease-in-out_infinite]"
+            className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 animate-whatsapp-pulse"
           >
             <MessageCircle className="w-6 h-6" />
           </button>
