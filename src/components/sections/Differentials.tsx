@@ -22,7 +22,7 @@ const Differentials = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-marble">
+    <section className="py-16 lg:py-20 bg-gradient-marble">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -59,7 +59,7 @@ const Differentials = () => {
 
         {/* CTA */}
         <div className="text-center animate-fade-up [animation-delay:800ms]">
-          <Button variant="gold" size="lg">
+          <Button variant="gold" size="lg" className="mx-4 sm:mx-0">
             Descubra como funciona
           </Button>
         </div>

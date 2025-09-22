@@ -50,7 +50,7 @@ const FixedCTA = () => {
                 variant="outline" 
                 size="sm" 
                 className="w-full text-green-600 border-green-600 hover:bg-green-50"
-                onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                onClick={() => window.open('https://wa.me/553171701177', '_blank')}
               >
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Abrir WhatsApp
@@ -61,7 +61,7 @@ const FixedCTA = () => {
           {/* WhatsApp Button */}
           <button
             onClick={() => setShowWhatsApp(!showWhatsApp)}
-            className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 animate-pulse"
+            className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 animate-[pulse_2s_ease-in-out_infinite]"
           >
             <MessageCircle className="w-6 h-6" />
           </button>

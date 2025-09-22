@@ -28,7 +28,7 @@ const FinalCTA = () => {
         {/* Simple Contact Form Preview */}
         <div className="max-w-md mx-auto">
           <p className="text-sm text-muted-foreground mb-4">
-            Ou deixe seu contato que retornamos em até 2 horas
+            Ou deixe seu contato que retornamos para agendar sua demonstração.
           </p>
           <div className="bg-background rounded-lg p-6 shadow-lg border border-border">
             <div className="space-y-4">
