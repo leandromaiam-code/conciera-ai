@@ -8,8 +8,8 @@ const HeroSection = () => {
   
   return (
     <section className={theme === 'light' ? 
-      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-2 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
-      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-2 lg:pt-16 flex items-center justify-center overflow-hidden"
+      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-4 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
+      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-4 lg:pt-16 flex items-center justify-center overflow-hidden"
     }>
       {/* Background Image with Overlay */}
       {theme !== 'light' && (
@@ -28,7 +28,7 @@ const HeroSection = () => {
         
 
         {/* Main Headline */}
-        <div className="mb-2 lg:mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
+        <div className="mb-8 lg:mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
           <h1 className={theme === 'light' ? 
             "text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-foreground mb-6 lg:mb-8 leading-tight" :
             "text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-luxury-ivory mb-6 lg:mb-8 leading-tight"
