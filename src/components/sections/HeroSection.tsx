@@ -8,8 +8,8 @@ const HeroSection = () => {
   
   return (
     <section className={theme === 'light' ? 
-      "relative min-h-screen lg:min-h-[calc(100vh-2rem)] pt-8 lg:pt-6 flex items-center justify-center overflow-hidden bg-background" : 
-      "relative min-h-screen lg:min-h-[calc(100vh-2rem)] pt-8 lg:pt-6 flex items-center justify-center overflow-hidden"
+      "relative min-h-screen lg:min-h-[calc(100vh-12rem)] pt-8 lg:pt-6 flex items-center justify-center overflow-hidden bg-background" : 
+      "relative min-h-screen lg:min-h-[calc(100vh-12rem)] pt-8 lg:pt-6 flex items-center justify-center overflow-hidden"
     }>
       {/* Background Image with Overlay */}
       {theme !== 'light' && (
