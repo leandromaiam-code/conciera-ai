@@ -63,7 +63,7 @@ const FixedCTA = () => {
       {/* Mobile Bottom CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden">
         <div className="bg-background border-t border-border p-4">
-          <Button variant="gold" size="0.5g" className="w-full">
+          <Button variant="gold" size="lg" className="w-full h-11">
             <Calendar className="mr-2 h-5 w-5" />
             Agendar Demo
           </Button>
