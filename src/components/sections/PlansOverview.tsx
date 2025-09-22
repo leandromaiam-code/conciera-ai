@@ -94,7 +94,7 @@ const PlansOverview = () => {
                 <Button 
                   variant={plan.highlight ? "gold" : "outline_gold"}
                   size="lg" 
-                  className={`w-full ${plan.highlight ? 'animate-magnetic' : 'hover-magnetic'}`}
+                  className="w-full"
                 >
                   {plan.highlight ? 'Garantir Demonstração' : 'Ver Demonstração'}
                 </Button>
@@ -107,7 +107,7 @@ const PlansOverview = () => {
         <div className={`text-center transition-all duration-700 delay-600 ${
           headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <Button variant="gold" size="xl" className="hover-magnetic mx-6 sm:mx-0">
+          <Button variant="gold" size="xl" className="mx-6 sm:mx-0">
             Agendar minha demonstração gratuita
           </Button>
           <p className="text-sm text-muted-foreground mt-4">

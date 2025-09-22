@@ -236,9 +236,11 @@ All colors MUST be HSL.
     transition: var(--transition-luxury);
   }
   
-  .hover-lift:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: var(--shadow-luxury);
+  @media (hover: hover) {
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-luxury);
+    }
   }
 
   .hover-glow {
@@ -248,7 +250,7 @@ All colors MUST be HSL.
   @media (hover: hover) {
     .hover-glow:hover {
       box-shadow: var(--shadow-gold);
-      transform: translateY(-2px) scale(1.02);
+      transform: translateY(-2px);
     }
   }
 
@@ -257,9 +259,11 @@ All colors MUST be HSL.
     transform-style: preserve-3d;
   }
 
-  .hover-3d:hover {
-    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) translateY(-8px);
-    box-shadow: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+  @media (hover: hover) {
+    .hover-3d:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    }
   }
 
   @media (hover: hover) {

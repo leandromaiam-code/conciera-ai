@@ -47,7 +47,7 @@ const FinalCTA = () => {
                 placeholder="Nome da clínica"
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold/50"
               />
-              <Button variant="gold" className="w-full mx-6 sm:mx-0">
+              <Button variant="gold" className="w-full">
                 Solicitar Contato
               </Button>
             </div>
