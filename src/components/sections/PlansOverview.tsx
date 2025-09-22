@@ -67,7 +67,7 @@ const PlansOverview = () => {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               {plan.highlight && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 animate-glow-pulse">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1 animate-glow-pulse">
                   <span className="bg-luxury-gold text-background px-6 py-2 rounded-full text-sm font-semibold shadow-gold">
                     🏆 Mais Popular
                   </span>
