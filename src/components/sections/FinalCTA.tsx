@@ -25,8 +25,6 @@ const FinalCTA = () => {
           </Button>
         </div>
         
-          </div>
-        </div>
       </div>
     </section>
   );
