@@ -16,7 +16,7 @@ const FinalCTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button variant="gold" size="xl" className="hover-glow mx-6 sm:mx-0">
             <Calendar className="mr-2 h-5 w-5" />
-            Agendar Demonstração Gratuita
+            Agendar Demonstração
           </Button>
           
           <Button variant="outline" size="xl" className="hover-lift mx-6 sm:mx-0">
@@ -25,32 +25,6 @@ const FinalCTA = () => {
           </Button>
         </div>
         
-        {/* Simple Contact Form Preview */}
-        <div className="max-w-md mx-auto">
-          <p className="text-sm text-muted-foreground mb-4">
-            Ou deixe seu contato que retornamos para agendar sua demonstração.
-          </p>
-          <div className="bg-background rounded-lg p-6 shadow-lg border border-border">
-            <div className="space-y-4">
-              <input 
-                type="text" 
-                placeholder="Nome completo"
-                className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold/50"
-              />
-              <input 
-                type="text" 
-                placeholder="WhatsApp"
-                className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold/50"
-              />
-              <input 
-                type="text" 
-                placeholder="Nome da clínica"
-                className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold/50"
-              />
-              <Button variant="gold" className="w-full mx-6 sm:mx-0">
-                Solicitar Contato
-              </Button>
-            </div>
           </div>
         </div>
       </div>
