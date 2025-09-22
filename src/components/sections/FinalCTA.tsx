@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const FinalCTA = () => {
+  const { theme } = useTheme();
+  
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 to-luxury-gold/5">
+    <section className={theme === 'light' ? 
+      "py-20 bg-gradient-to-br from-primary/5 to-luxury-gold/5" :
+      "py-20 bg-gradient-to-br from-primary/10 to-accent/10"
+    }>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">
           Pronto(a) para transformar o seu atendimento em receita?
