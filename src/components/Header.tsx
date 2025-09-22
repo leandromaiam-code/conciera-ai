@@ -59,9 +59,6 @@ const Header = () => {
                 <Sun className="w-4 h-4" />
               )}
             </button>
-            <Button variant="gold" size="default" className="shadow-luxury hover:shadow-luxury-glow transition-all duration-300">
-              Agendar Demo
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
