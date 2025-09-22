@@ -117,7 +117,7 @@ const Results = () => {
         <div className={`text-center transition-all duration-700 delay-1000 ${
           examplesInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'  
         }`}>
-          <Button variant="gold" size="xl" className="hover-glow animate-magnetic mx-6 sm:mx-0">
+          <Button variant="gold" size="xl" className="hover-glow hover-magnetic mx-6 sm:mx-0">
             Quero esses resultados na minha clínica
           </Button>
         </div>
