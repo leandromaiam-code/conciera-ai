@@ -109,10 +109,6 @@ const Footer = () => {
               ))}
             </ul>
 
-            {/* CTA Button */}
-            <Button variant="gold" size="lg" className="w-full hover-glow">
-              Falar no WhatsApp
-            </Button>
           </div>
         </div>
       </div>
