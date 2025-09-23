@@ -24,7 +24,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg sm:text-lg lg:text-xl xl:text-2xl text-foreground/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto">
             
-A Conciera não é um software de atendimento; é um sistema operacional de receita para clínicas de elite, arquitetado por quem entende profundamente do negócio.
+A Conciera não é um software de atendimento; é um sistema gerador de receita recorrente para clínicas de elite, arquitetado por quem entende profundamente do negócio.
           </p>
         </div>
 
