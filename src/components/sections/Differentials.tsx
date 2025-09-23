@@ -5,7 +5,7 @@ const Differentials = () => {
   const differentials = [
     {
       icon: <Brain className="w-8 h-8" />,
-      text: "Não é chatbot: é uma equipe digital humanizada, 24/7."
+      text: "Não é chatbot: é uma concierge digital humanizada, que atende 24/7."
     },
     {
       icon: <Users className="w-8 h-8" />,
