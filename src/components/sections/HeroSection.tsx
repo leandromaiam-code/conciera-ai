@@ -20,7 +20,7 @@ const HeroSection = () => {
         {/* Main Headline */}
         <div className="mb-8 lg:mb-12 animate-fade-up [animation-delay:200ms] opacity-0">
           <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-foreground mb-10 lg:mb-14 leading-tight">
-            Transforme atendimento em receita com a excelência da sua marca, 24/7,.
+            Transforme atendimento em receita, com a excelência da sua marca, 24/7.
           </h1>
           <p className="text-lg sm:text-lg lg:text-xl xl:text-2xl text-foreground/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto">
             
