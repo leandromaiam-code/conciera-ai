@@ -4,8 +4,20 @@ import { Button } from "@/components/ui/button";
 const PlansSection = () => {
   const plans = [
     {
-      name: "Core",
+      name: "Light",
       subtitle: "Atendimento que converte",
+      icon: <Zap className="w-8 h-8" />,
+      description: "Muito mais que um chatbot, a nova era da concierge digital com IA especializada",
+      features: [
+        "Atendente Inteligente 24/7",
+        "Relatórios básicos",
+        "Proteção LGPD"
+      ],
+      highlight: false
+    },
+    {
+      name: "Core",
+      subtitle: "Sistema de Receita Recorrente",
       icon: <Zap className="w-8 h-8" />,
       description: "Muito mais que um chatbot, inaugura a nova era do concierge digital via IA",
       features: [
@@ -13,6 +25,7 @@ const PlansSection = () => {
         "Orquestração multi-canal",
         "Agendamento + Pagamento integrado",
         "Confirmações automáticas",
+        "Relatórios por canal e etapa do funil",
         "Painel da Equipe",
         "Relatórios básicos",
         "Proteção LGPD"
@@ -21,16 +34,18 @@ const PlansSection = () => {
     },
     {
       name: "Pro", 
-      subtitle: "Atendimento + Estratégia individualizada",
+      subtitle: "Sistema de Receita Recorrente + Estratégia individualizada",
       icon: <Star className="w-8 h-8" />,
       description: "Todos os benefícios do Core + orientação estratégica baseada em análise comportamental",
       features: [
         "Tudo da versão Core +",
-        "PersonaMap (ARCHETIPSE® + DISC)",
-        "Orientação para comercial/marketing",
-        "Sugestões de próximas ações",
-        "Relatórios por canal e etapa do funil",
-        "Análise de tendência comportamental"
+        
+        "Recomendações de vendas para comercial",
+        "Acompanhamento pré, durante e pós",
+        "Registro de orientações e lembretes",
+        "Check-ins personalizados",
+        "Pesquisa de satisfação",
+        "Agendamentos conectados à jornada",
       ],
       highlight: true
     },
@@ -41,12 +56,10 @@ const PlansSection = () => {
       description: "Acompanhamento 360° individualizado - disponível apenas para clínicas elegíveis",
       features: [
         "Tudo da versão Pro +",
-        "Acompanhamento pré, durante e pós",
-        "Registro de orientações e lembretes",
-        "Check-ins personalizados",
-        "Pesquisa de satisfação",
-        "Agendamentos conectados à jornada",
-        "Pacotes e combos integrados"
+        
+        "Método ARCHETIPSE®
+        "Análise de tendência comportamental"
+        "Inteligência de Conversão (Aplicação DISC)",
       ],
       highlight: false,
       exclusive: true
