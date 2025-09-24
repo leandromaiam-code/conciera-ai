@@ -31,8 +31,8 @@ const ValueProposition = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A Conciera não é um software de atendimento; <span className="text-luxury-gold"é um sistema de receita recorrente 
-            para clínicas de elite</span>, arquitetado por quem entende profundamente do negócio
+            A Conciera não é um software de atendimento; <span className="text-luxury-gold">é um sistema de receita recorrente 
+            para clínicas de elite,</span> arquitetado por quem entende profundamente do negócio
           </p>
         </div>
 
