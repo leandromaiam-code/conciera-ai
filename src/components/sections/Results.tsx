@@ -8,19 +8,19 @@ const Results = () => {
       icon: <TrendingUp className="w-8 h-8" />,
       percentage: "40%",
       title: "Mais conversão",
-      description: "transformar até 40% a mais de conversas em agendamentos confirmados."
+      description: "transformar mais de conversas em agendamentos confirmados."
     },
     {
       icon: <UserCheck className="w-8 h-8" />,
       percentage: "30%",
       title: "Menos faltas (no-show)", 
-      description: "reduzir em até 30% as ausências com confirmações ativas e sinal antecipado."
+      description: "redução de no show, por meio de acompanhamento pré consulta e sinal antecipado."
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
       percentage: "50%",
       title: "Mais receita",
-      description: "aumentar faturamento ao integrar agendamento + pagamento no mesmo fluxo."
+      description: "aumentar faturamento ao melhorar conversão e reduzir faltas."
     },
     {
       icon: <Clock className="w-8 h-8" />,
@@ -52,7 +52,7 @@ const Results = () => {
           }`}
         >
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
-            Resultados Possíveis
+            Benefícios
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Com a CONCIERA, sua clínica poderá atingir resultados como:
