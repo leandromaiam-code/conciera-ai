@@ -93,14 +93,14 @@ const Planos = () => {
         {/* Plans Grid */}
         <section className="py-16 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               {plans.map((plan) => (
                 <div key={plan.name} className={`relative bg-card border border-border rounded-2xl p-8 ${
                   plan.highlight ? 'ring-2 ring-luxury-gold shadow-2xl scale-105' : 'shadow-lg'
                 }`}>
                   {plan.highlight && (
                     <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-luxury-gold text-white">
-                      Mais Popular
+                      Mais Procurado
                     </Badge>
                   )}
                   
