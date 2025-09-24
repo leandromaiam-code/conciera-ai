@@ -20,7 +20,7 @@ const Planos = () => {
     },
     {
       name: "Core",
-      subtitle: "Atendimento que converte",
+      subtitle: "Sistema de Receita Recorrente",
       price: "Sob consulta",
       icon: Zap,
       description: "Concierge digital 24/7 com agendamento e pagamento integrados",
@@ -39,7 +39,7 @@ const Planos = () => {
     },
     {
       name: "Pro",
-      subtitle: "Atendimento + Estratégia individualizada",
+      subtitle: "Sistema de Receita Recorrente + Jornada Completa",
       price: "Sob consulta",
       icon: Crown,
       description: "Tudo do Core + orientação estratégica com MÉTODO ARCHETIPSE®",
@@ -56,7 +56,7 @@ const Planos = () => {
     },
     {
       name: "Ultra",
-      subtitle: "Plataforma de Jornada Completa",
+      subtitle: "Plataforma Estratégica Premium",
       price: "Sob consulta",
       icon: Gem,
       description: "Tudo do Pro + acompanhamento 360° individualizado",
@@ -64,7 +64,7 @@ const Planos = () => {
         "Tudo da versão Pro +",
         "Método ARCHETIPSE®,
         "Análise comportamental avançada",
-        "Inteligência de Conversão (Aplicação DISC)",,
+        "Inteligência de Conversão (Aplicação DISC)",
         "Disponível apenas para clínicas elegíveis"
       ],
       highlight: false,
