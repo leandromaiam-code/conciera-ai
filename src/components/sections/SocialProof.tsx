@@ -6,7 +6,7 @@ const SocialProof = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-serif text-foreground mb-4">
-            A confiança das clínicas que definem o padrão
+            Padrão de Excelência
           </h2>
           <div className="w-24 h-0.5 bg-luxury-gold mx-auto"></div>
         </div>
