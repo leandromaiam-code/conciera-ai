@@ -62,7 +62,7 @@ const Planos = () => {
       description: "Tudo do Pro + acompanhamento 360° individualizado",
       features: [
         "Tudo da versão Pro +",
-        "Método ARCHETIPSE®,
+        "Método ARCHETIPSE®",
         "Análise comportamental avançada",
         "Inteligência de Conversão",
         "Disponível apenas para clínicas elegíveis"
