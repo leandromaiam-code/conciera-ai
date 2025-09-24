@@ -1,4 +1,4 @@
-import { TrendingUp, Calendar, BarChart3, Gem, Heart-Handshake, Magnet} from "lucide-react";
+import { TrendingUp, Calendar, BarChart3, Gem, heart-handshake, Magnet} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
@@ -25,7 +25,7 @@ const MainBenefits = () => {
       description: "Maior nível de serviço a seus clientes, com tempos de resposta até 10x mais rápidos, padrão Premium."
     },
     {
-      icon: <Heart-Handshake className="w-12 h-12" />,
+      icon: <heart-handshake className="w-12 h-12" />,
       title: "Atendimento Personalizado",
       description: "Abordagem conversacional hipercustomizada ao perfil comportamental de cada cliente."
     },
