@@ -9,7 +9,6 @@ import PlansOverview from "@/components/sections/PlansOverview";
 import Authority from "@/components/sections/Authority";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
-import PainSolution from "@/components/sections/PainSolution";
 import ValueProposition from "@/components/sections/ValueProposition";
 import SocialProof from "@/components/sections/SocialProof";
 import FixedCTA from "@/components/FixedCTA";
@@ -22,10 +21,9 @@ const Index = () => {
         <HeroSection />
         <MainBenefits />
         <Differentials />
+        <ValueProposition />
         <HowItWorks />
         <Results />
-        <PainSolution />
-        <ValueProposition />
         <SocialProof />
         <Authority />
         <FAQ />
