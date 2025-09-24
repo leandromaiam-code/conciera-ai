@@ -46,7 +46,7 @@ const MainBenefits = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
-            <span className="text-luxury-gold">O que a Conciera entrega para sua Clínica</span>
+            <span className="text-luxury-gold">A Conciera entrega para sua Clínica</span>
           </h2>
         </div>
 
