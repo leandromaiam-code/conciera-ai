@@ -1,4 +1,4 @@
-import { TrendingUp, Calendar, BarChart3, Gem, Heart-Handshake Magnet} from "lucide-react";
+import { TrendingUp, Calendar, BarChart3, Gem, Heart-Handshake, Magnet} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
