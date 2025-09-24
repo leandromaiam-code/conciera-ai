@@ -5,15 +5,15 @@ const Differentials = () => {
   const differentials = [
     {
       icon: <Brain className="w-8 h-8" />,
-      text: "Não é chatbot: é uma concierge digital humanizada, que atende 24/7."
+      text: "Não é chatbot: Somos a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar empatia, conexão e maior conversão."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      text: "Playbooks específicos para clínicas estéticas e cirúrgicas."
+      text: "Específicos para clínicas estéticas e cirúrgicas."
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      text: "Onboarding alinhado ao seu branding e protocolos internos."
+      text: "Personalizado ao seu branding e processos internos."
     },
     {
       icon: <HeartHandshake className="w-8 h-8" />,
