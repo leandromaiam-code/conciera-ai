@@ -36,7 +36,7 @@ const ValueProposition = () => {
             <span className="text-luxury-gold">com a excelência da sua marca</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A Conciera não é um software de atendimento; é um sistema operacional de receita 
+            A Conciera não é um software de atendimento; é um sistema de receita recorrente 
             para clínicas de elite, arquitetado por quem entende profundamente do negócio
           </p>
         </div>

@@ -116,6 +116,11 @@ const Results = () => {
         </div>
 
         {/* CTA */}
+         <div className="max-w-4xl mx-auto">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              Eleve toda a jornada do cliente para um patamar onde a conversão e fidelização se tornem inevitáveis por meio de IA especializada, estratégia e processo.
+            </p>
+          </div>
         <div className={`text-center transition-all duration-700 delay-1000 ${
           examplesInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'  
         }`}>
