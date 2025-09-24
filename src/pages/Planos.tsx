@@ -52,7 +52,7 @@ const Planos = () => {
         "Agendamentos conectados à jornada"
       ],
       highlight: true,
-      cta: "Mais Popular"
+      cta: "Mais Procurado"
     },
     {
       name: "Ultra",
