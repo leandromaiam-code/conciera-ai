@@ -31,9 +31,11 @@ const Results = () => {
   ];
 
   const examples = [
-    "Uma clínica de estética que hoje perde pacientes por demora no WhatsApp passa a responder em segundos e aumenta sua taxa de conversão.",
-    "Uma clínica plástica que sofria com 1 em cada 3 pacientes faltando reduz o no-show pela metade com confirmações ativas.",
-    "Uma clínica premium que gastava tempo treinando recepcionistas passa a ter atendimento padronizado, sem pausas, férias ou turnover."
+    "Resposta lenta é perda de clientes→ Atendimento 24/7 em WhatsApp, Instagram, site e telefone, em segundos.",
+    "Turnover e re-treinagem → atendimento humanizado 24/07, sem interrupções, pausas, férias ou dores de cabeça.",
+    "Faltas (no-show) → lembretes pré consulta e sinal no agendamento.",
+    "Conversas que não convertem → IA treinada playbooks por especialidade para remover objeções.",
+    "Dificuldade na gestão do negócio → Relatórios de ponta a ponta, que metrificam tudo."
   ];
 
   const { ref: headerRef, isInView: headerInView } = useIntersectionObserver();
@@ -93,7 +95,7 @@ const Results = () => {
           }`}
         >
           <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-8 text-center">
-            Exemplos práticos:
+            Como a Conciera vai ajudar sua clínica:
           </h3>
           <div className="space-y-6 max-w-4xl mx-auto">
             {examples.map((example, index) => (
