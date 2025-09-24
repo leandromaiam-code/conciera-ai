@@ -9,6 +9,9 @@ import PlansOverview from "@/components/sections/PlansOverview";
 import Authority from "@/components/sections/Authority";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+import FinalCTA from "@/components/sections/PainSolution";
+import FinalCTA from "@/components/sections/ValueProposition";
+import FinalCTA from "@/components/sections/SocialProof";
 import FixedCTA from "@/components/FixedCTA";
 
 const Index = () => {
@@ -21,7 +24,9 @@ const Index = () => {
         <Differentials />
         <HowItWorks />
         <Results />
-        <PlansOverview />
+        <PainSolution />
+        <ValueProposition />
+        <SocialProof />
         <Authority />
         <FAQ />
         <FinalCTA />
