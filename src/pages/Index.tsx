@@ -24,7 +24,6 @@ const Index = () => {
         <ValueProposition />
         <HowItWorks />
         <Results />
-        <SocialProof />
         <Authority />
         <FAQ />
         <FinalCTA />
