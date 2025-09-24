@@ -15,7 +15,7 @@ const MainBenefits = () => {
       description: "Confirmações ativas, lembretes automáticos e opção de sinal antecipado."
     },,
     {
-      icon: <Calendar className="w-12 h-12" />,
+      icon: <BarChart3 className="w-12 h-12" />,
       title: "Gestão Inteligente",
       description: "Relatórios claros com insights valiosos para expandir sua clínica.."
     },
@@ -42,6 +42,14 @@ const MainBenefits = () => {
   return (
     <section className="py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-up">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
+            <span className="text-luxury-gold">O que a Conciera entrega para sua Clínica</span>
+          </h2>
+        </div>
+
         
         {/* Benefits Grid */}
         <div ref={benefitsRef} className="grid md:grid-cols-3 gap-8 mb-16">
