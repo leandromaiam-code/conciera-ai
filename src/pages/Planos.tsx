@@ -64,7 +64,7 @@ const Planos = () => {
         "Tudo da versão Pro +",
         "Método ARCHETIPSE®,
         "Análise comportamental avançada",
-        "Inteligência de Conversão (Aplicação DISC)",
+        "Inteligência de Conversão",
         "Disponível apenas para clínicas elegíveis"
       ],
       highlight: false,
