@@ -9,7 +9,7 @@ const Planos = () => {
      {
       name: "Light",
       subtitle: "Atendimento que converte",
-      icon: Star,
+      icon: Zap,
       description: "Muito mais que um chatbot, a nova era da concierge digital com IA especializada",
       features: [
         "Atendente Inteligente 24/7",
@@ -22,7 +22,7 @@ const Planos = () => {
       name: "Core",
       subtitle: "Sistema de Receita Recorrente",
       price: "Sob consulta",
-      icon: Zap,
+      icon: Star,
       description: "Concierge digital 24/7 com agendamento e pagamento integrados",
       features: [
         "Atendente Inteligente 24/7",
