@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button";
 
 const Differentials = () => {
   const differentials = [
+    ,
     {
       icon: <Brain className="w-8 h-8" />,
-      text: "Não é chatbot: Somos a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar empatia, conexão e maior conversão."
+      text: "Somos a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar empatia, conexão e maior conversão."
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -17,7 +18,7 @@ const Differentials = () => {
     },
     {
       icon: <HeartHandshake className="w-8 h-8" />,
-      text: "Acompanhamento pré e pós consulta, reduzindo cancelamentos e elevando a experiência."
+      text: "Excelência em toda jornada do cliente do primeiro contato ao pós tratamento.."
     }
   ];
 
@@ -38,7 +39,7 @@ const Differentials = () => {
         </div>
 
         {/* Differentials Grid */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto mb-16">
           {differentials.map((item, index) => (
             <div 
               key={index}
