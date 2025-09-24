@@ -1,11 +1,23 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, Crown, Zap, Star } from "lucide-react";
+import { Check, Crown, Zap, Star, Gem } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Planos = () => {
   const plans = [
+     {
+      name: "Light",
+      subtitle: "Atendimento que converte",
+      icon: Star,
+      description: "Muito mais que um chatbot, a nova era da concierge digital com IA especializada",
+      features: [
+        "Atendente Inteligente 24/7",
+        "Relatórios básicos",
+        "Proteção LGPD"
+      ],
+      highlight: false
+    },
     {
       name: "Core",
       subtitle: "Atendimento que converte",
@@ -18,7 +30,7 @@ const Planos = () => {
         "Integração com agenda e pagamentos",
         "Agendamento e pagamento no mesmo fluxo",
         "Confirmações automáticas pré-consulta",
-        "Painel da Equipe com histórico",
+        "Painel da Equipe",
         "Relatórios de conversão e receita",
         "Proteção de Dados (LGPD)"
       ],
@@ -33,12 +45,11 @@ const Planos = () => {
       description: "Tudo do Core + orientação estratégica com MÉTODO ARCHETIPSE®",
       features: [
         "Tudo da versão Core",
-        "PersonaMap (ARCHETIPSE® + DISC)",
-        "Orientação para comercial/marketing",
-        "Sugestões de próximas ações",
-        "Relatórios por canal e etapa do funil",
-        "Análise comportamental avançada",
-        "Briefing estratégico por paciente"
+        "Recomendações de vendas para comercial",
+        "Acompanhamento pré, durante e pós",
+        "Registro de orientações e lembretes",
+        "Check-ins personalizados",
+        "Agendamentos conectados à jornada"
       ],
       highlight: true,
       cta: "Mais Popular"
@@ -47,15 +58,13 @@ const Planos = () => {
       name: "Ultra",
       subtitle: "Plataforma de Jornada Completa",
       price: "Sob consulta",
-      icon: Star,
+      icon: Gem,
       description: "Tudo do Pro + acompanhamento 360° individualizado",
       features: [
-        "Tudo da versão Pro",
-        "Acompanhamento pré, durante e pós procedimento",
-        "Registro de orientações e lembretes",
-        "Check-ins e pesquisa de satisfação",
-        "Agendamentos conectados à jornada",
-        "Gestão de pacotes e combos",
+        "Tudo da versão Pro +",
+        "Método ARCHETIPSE®
+        "Análise comportamental avançada"
+        "Inteligência de Conversão (Aplicação DISC)",
         "Disponível apenas para clínicas elegíveis"
       ],
       highlight: false,
