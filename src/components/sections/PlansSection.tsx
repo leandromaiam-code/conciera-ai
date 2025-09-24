@@ -76,8 +76,8 @@ const PlansSection = () => {
             Solução elegante e escalável
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Começamos simples (Core), evoluímos para estratégia (Pro) 
-            e chegamos à jornada completa do paciente (Ultra)
+            Começamos simples (Light/Core), evoluímos para jornada do cliente completa (Pro) 
+            e chegamos à total alinhamento estratégico para geração de receita (Ultra)
           </p>
         </div>
 
