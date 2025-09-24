@@ -1,4 +1,4 @@
-import { TrendingUp, Calendar, BarChart3 } from "lucide-react";
+import { TrendingUp, Calendar, BarChart3, Gem } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIntersectionObserver, useStaggeredAnimation } from "@/hooks/useIntersectionObserver";
 
@@ -20,7 +20,7 @@ const MainBenefits = () => {
       description: "Relatórios claros com insights valiosos para expandir sua clínica.."
     },
     {
-      icon: <BarChart3 className="w-12 h-12" />,
+      icon: <Gem className="w-12 h-12" />,
       title: "Excelência de Atendimento",
       description: "Maior nível de serviço a seus clientes, com tempos de resposta até 10x mais rápidos, padrão Premium."
     },
@@ -31,7 +31,7 @@ const MainBenefits = () => {
     },
     {
       icon: <BarChart3 className="w-12 h-12" />,
-      title: "Fidelização de Clientes Personalizado",
+      title: "Fidelização de Clientes",
       description: "Mais fidelização (recorrência) pelo acompanhamento periódico do paciente."
     }
   ];
