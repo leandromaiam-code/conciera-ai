@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
 import logoImage from "@/assets/conciera-logo-black-gold.png";
-import logoWhite from "@/assets/conciera-logo-black-gold.png";
+import logoWhite from "@/assets/conciera-logo-white-gold.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
