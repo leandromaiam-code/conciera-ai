@@ -33,7 +33,7 @@ const Footer = () => {
               <img 
                 src={theme === 'light' ? footerLogo : footerLogoWhite} 
                 alt="Conciera Logo" 
-                className="h-12 w-auto mb-4"
+                className="h-20 w-auto mb-4"
               />
               <p className="text-foreground/80 leading-relaxed max-w-md">
                 Sistema operacional de receita para clínicas de elite. 
