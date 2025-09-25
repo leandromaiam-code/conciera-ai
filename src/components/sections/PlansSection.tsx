@@ -56,8 +56,7 @@ const PlansSection = () => {
       description: "Acompanhamento 360° individualizado - disponível apenas para clínicas elegíveis",
       features: [
         "Tudo da versão Pro +",
-        
-        "Método ARCHETIPSE®
+        "Método ARCHETIPSE®"
         "Análise de tendência comportamental"
         "Inteligência de Conversão (Aplicação DISC)",
       ],
