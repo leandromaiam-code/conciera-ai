@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
-import logoImage from "@/assets/conciera-logo-black-gold.png";
-import logoWhite from "@/assets/conciera-logo-white-gold.png";
+import footerLogo from "@/assets/logo-conciera.png";
+import footerLogoWhite from "@/assets/logo-white.jpeg";
 
 const Footer = () => {
   const { theme } = useTheme();
