@@ -27,7 +27,7 @@ const Header = () => {
             <img 
               src={theme === 'light' ? logoImage : logoWhite} 
               alt="Conciera Logo" 
-              className="h-8 sm:h-10 lg:h-12 w-auto"
+              className="h-16 sm:h-20 lg:h-24 w-auto"
             />
           </Link>
 
