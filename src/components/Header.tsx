@@ -14,7 +14,7 @@ const Header = () => {
     { name: "Início", href: "/" },
     { name: "Planos", href: "/planos" },
     { name: "Blog", href: "/#authority" },
-    { name: "Login", href: "/login" },
+    { name: "Login", href: "https://concierademo.vercel.app/" },
   ];
 
   return (
