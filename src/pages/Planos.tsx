@@ -154,59 +154,6 @@ const Planos = () => {
           </div>
         </section>
 
-        {/* ROI Calculator Preview */}
-        <section className="py-16 bg-luxury-marble/5">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-serif text-foreground mb-8">
-              Calcule o Retorno do seu Investimento
-            </h2>
-            
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-border">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4">Sua Situação Atual</h3>
-                  <div className="space-y-4">
-                    <div className="text-left">
-                      <label className="block text-sm font-medium mb-2">Leads por mês:</label>
-                      <input type="number" className="w-full px-4 py-3 border border-border rounded-lg" placeholder="Ex: 100" />
-                    </div>
-                    <div className="text-left">
-                      <label className="block text-sm font-medium mb-2">Taxa de conversão atual:</label>
-                      <input type="number" className="w-full px-4 py-3 border border-border rounded-lg" placeholder="Ex: 15%" />
-                    </div>
-                    <div className="text-left">
-                      <label className="block text-sm font-medium mb-2">Ticket médio (R$):</label>
-                      <input type="number" className="w-full px-4 py-3 border border-border rounded-lg" placeholder="Ex: 2000" />
-                    </div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold mb-4">Com a Conciera</h3>
-                  <div className="space-y-4">
-                    <div className="bg-luxury-gold/10 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-luxury-gold">+40%</div>
-                      <div className="text-sm text-muted-foreground">Aumento médio na conversão</div>
-                    </div>
-                    <div className="bg-luxury-gold/10 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-luxury-gold">24/7</div>
-                      <div className="text-sm text-muted-foreground">Atendimento sem pausas</div>
-                    </div>
-                    <div className="bg-luxury-gold/10 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-luxury-gold">-60%</div>
-                      <div className="text-sm text-muted-foreground">Redução no no-show</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <Button variant="gold" size="lg" className="mt-8 mx-6 sm:mx-0">
-                Calcular Meu ROI
-              </Button>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Final */}
         <section className="py-20 bg-gradient-to-br from-primary/5 to-luxury-gold/5">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
