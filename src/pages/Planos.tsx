@@ -55,7 +55,7 @@ const Planos = () => {
       cta: "Mais Procurado"
     },
     {
-      name: "Ultra",
+      name: "Premium",
       subtitle: "Plataforma Estratégica Premium",
       price: "Sob consulta",
       icon: Gem,
