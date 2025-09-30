@@ -7,37 +7,29 @@ import { Badge } from "@/components/ui/badge";
 const Planos = () => {
   const plans = [
     {
-      name: "Core",
-      subtitle: "Sistema de Receita Recorrente",
+      name: "Essential",
+      subtitle: "Atendimento que converte",
       price: "Sob consulta",
       icon: Star,
-      description: "Concierge digital 24/7 com agendamento e pagamento integrados",
       features: [
-        "Atendente Inteligente 24/7",
-        "Orquestração multi-canal (WhatsApp, Instagram, Site, Telefone)",
-        "Integração com agenda e pagamentos",
-        "Agendamento e pagamento no mesmo fluxo",
-        "Confirmações automáticas pré-consulta",
-        "Painel da Equipe",
-        "Relatórios de conversão e receita",
-        "Proteção de Dados (LGPD)"
+        "Atendente Inteligente 24/7 integrada ao WhatsApp",
+        "Agendamento automático",
+        "Confirmação de pagamento (com apoio humano)",
+        "Dashboard com indicadores de perfomance"
       ],
       highlight: false,
       cta: "Solicitar Proposta"
     },
     {
       name: "Pro",
-      subtitle: "Sistema de Receita Recorrente + Jornada Completa",
+      subtitle: "Sistema de Receita Recorrente",
       price: "Sob consulta",
       icon: Crown,
-      description: "Tudo do Core + orientação estratégica com MÉTODO ARCHETIPSE®",
       features: [
-        "Tudo da versão Core",
-        "Recomendações de vendas para comercial",
-        "Acompanhamento pré, durante e pós",
-        "Registro de orientações e lembretes",
-        "Check-ins personalizados",
-        "Agendamentos conectados à jornada"
+        "Tudo da versão Essential",
+        "Integração com Instagram",
+        "Acompanhamento e lembrete pré-consulta",
+        "Análise comportamental para aumentar conversão"
       ],
       highlight: true,
       cta: "Mais Procurado"
@@ -47,13 +39,12 @@ const Planos = () => {
       subtitle: "Plataforma Estratégica Premium",
       price: "Sob consulta",
       icon: Gem,
-      description: "Tudo do Pro + acompanhamento 360° individualizado",
       features: [
         "Tudo da versão Pro +",
-        "Método ARCHETIPSE®",
-        "Análise comportamental avançada",
-        "Inteligência de Conversão",
-        "Disponível apenas para clínicas elegíveis"
+        "Geração de recomendações personalizados para maximizar vendas nas consultas"
+        "Integrações com TypeForms e Site",
+        "Suporte Prioritário",
+        "Personalizações On-demand"
       ],
       highlight: false,
       exclusive: true,
