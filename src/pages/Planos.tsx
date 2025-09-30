@@ -6,16 +6,21 @@ import { Badge } from "@/components/ui/badge";
 
 const Planos = () => {
   const plans = [
+     {
     {
-      name: "Essential",
-      subtitle: "Atendimento que converte",
+      name: "Core",
+      subtitle: "Concierge digital 24/7 com agendamento e pagamento integrados",
       price: "Sob consulta",
       icon: Star,
       features: [
-        "Atendente Inteligente 24/7 integrada ao WhatsApp",
-        "Agendamento automático",
-        "Confirmação de pagamento (com apoio humano)",
-        "Dashboard com indicadores de perfomance"
+        "Atendente Inteligente 24/7",
+        "Orquestração multi-canal (WhatsApp, Instagram, Site, Telefone)",
+        "Integração com agenda e pagamentos",
+        "Agendamento e pagamento no mesmo fluxo",
+        "Confirmações automáticas pré-consulta",
+        "Painel da Equipe",
+        "Relatórios de conversão e receita",
+        "Proteção de Dados (LGPD)"
       ],
       highlight: false,
       cta: "Solicitar Proposta"
@@ -26,10 +31,12 @@ const Planos = () => {
       price: "Sob consulta",
       icon: Crown,
       features: [
-        "Tudo da versão Essential",
-        "Integração com Instagram",
-        "Acompanhamento e lembrete pré-consulta",
-        "Análise comportamental para aumentar conversão"
+        "Tudo da versão Core",
+        "Recomendações de vendas para comercial",
+        "Acompanhamento pré, durante e pós",
+        "Registro de orientações e lembretes",
+        "Check-ins personalizados",
+        "Agendamentos conectados à jornada"
       ],
       highlight: true,
       cta: "Mais Procurado"
@@ -41,10 +48,10 @@ const Planos = () => {
       icon: Gem,
       features: [
         "Tudo da versão Pro +",
-        "Geração de recomendações personalizados para maximizar vendas nas consultas"
-        "Integrações com TypeForms e Site",
-        "Suporte Prioritário",
-        "Personalizações On-demand"
+        "Método ARCHETIPSE®",
+        "Análise comportamental avançada",
+        "Inteligência de Conversão",
+        "Disponível apenas para clínicas elegíveis"
       ],
       highlight: false,
       exclusive: true,
