@@ -118,7 +118,7 @@ const Results = () => {
         {/* CTA */}
          <div className="max-w-4xl mx-auto">
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Entregamos Inteligência Estratégica*, não apenas automação via IA. A CONCIERA reconhece o perfil comportamental do seu paciente e adapta a abordagem conversacional, maximizando a conexão e a conversão do atendimento em receita.
+              Entregamos Inteligência Estratégica, não apenas automação via IA. A CONCIERA reconhece o perfil comportamental do seu paciente e adapta a abordagem conversacional, maximizando a conexão e a conversão do atendimento em receita.
             </p>
           </div>
         <div className={`text-center transition-all duration-700 delay-1000 ${
