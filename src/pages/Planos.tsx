@@ -61,7 +61,7 @@ const Planos = () => {
         <section className="py-20 bg-gradient-to-br from-luxury-marble/10 to-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-              Escolha o Plano Ideal para sua Clínica
+              Escolha o <strong className="text-luxury-gold">Plano Ideal</strong> para sua Clínica
             </h1>
           </div>
         </section>
