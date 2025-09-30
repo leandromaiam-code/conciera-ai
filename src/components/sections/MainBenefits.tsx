@@ -13,11 +13,11 @@ const MainBenefits = () => {
       icon: <Calendar className="w-12 h-12" />,
       title: "Menos faltas (no-show)",
       description: "Confirmações ativas, lembretes automáticos e opção de sinal antecipado."
-    },,
+    },
     {
-      icon: <BarChart3 className="w-12 h-12" />,
-      title: "Gestão Inteligente",
-      description: "Relatórios claros com insights valiosos para expandir sua clínica.."
+      icon: <Magnet className="w-12 h-12" />,
+      title: "Fidelização de Clientes",
+      description: "Mais fidelização (recorrência) pelo acompanhamento periódico do paciente."
     },
     {
       icon: <Gem className="w-12 h-12" />,
@@ -25,14 +25,14 @@ const MainBenefits = () => {
       description: "Maior nível de serviço a seus clientes, com tempos de resposta até 10x mais rápidos, padrão Premium."
     },
     {
+      icon: <BarChart3 className="w-12 h-12" />,
+      title: "Gestão Inteligente",
+      description: "Relatórios claros com insights valiosos para expandir sua clínica."
+    },
+    {
       icon: <Target className="w-12 h-12" />,
       title: "Atendimento Personalizado",
       description: "Abordagem conversacional hipercustomizada ao perfil comportamental de cada cliente."
-    },
-    {
-      icon: <Magnet className="w-12 h-12" />,
-      title: "Fidelização de Clientes",
-      description: "Mais fidelização (recorrência) pelo acompanhamento periódico do paciente."
     }
   ];
 
