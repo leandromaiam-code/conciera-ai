@@ -118,7 +118,7 @@ const Results = () => {
         {/* CTA */}
          <div className="max-w-4xl mx-auto">
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Eleve toda a jornada do cliente para um patamar onde a conversão e fidelização se tornem inevitáveis por meio de IA especializada, estratégia e processo.
+              Entregamos Inteligência Estratégica*, não apenas automação via IA. A CONCIERA reconhece o perfil comportamental do seu paciente e adapta a abordagem conversacional, maximizando a conexão e a conversão do atendimento em receita.
             </p>
           </div>
         <div className={`text-center transition-all duration-700 delay-1000 ${

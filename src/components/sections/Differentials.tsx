@@ -33,7 +33,7 @@ const Differentials = () => {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Entregamos Inteligência Estratégica*, não apenas automação via IA. A CONCIERA utiliza o <strong className="text-luxury-gold">MÉTODO ARCHETIPSE®️</strong>  inspirado na excelência de atendimento ao cliente do Disney Institute, e o DISC (tendência comportamental) para reconhecer o perfil do seu paciente e adaptar sua abordagem conversacional a ele, maximizando a conexão com sua clínica e a conversão do contato em receita.
+                            Eleve toda a jornada do cliente para um patamar onde a conversão e fidelização se tornem inevitáveis por meio de IA especializada, estratégia e processo.
             </p>
           </div>
         </div>
