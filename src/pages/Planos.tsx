@@ -63,9 +63,6 @@ const Planos = () => {
             <h1 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
               Escolha o Plano Ideal para sua Clínica
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Solução elegante e escalável: começamos simples, evoluímos para estratégia e chegamos à jornada completa do paciente
-            </p>
           </div>
         </section>
 
