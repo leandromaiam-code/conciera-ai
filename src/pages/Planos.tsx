@@ -41,7 +41,7 @@ const Planos = () => {
       icon: Gem,
       features: [
         "Tudo da versão Pro +",
-        "Geração de recomendações personalizados para maximizar vendas nas consultas"
+        "Geração de recomendações personalizados para maximizar vendas nas consultas",
         "Integrações com TypeForms e Site",
         "Suporte Prioritário",
         "Personalizações On-demand"
