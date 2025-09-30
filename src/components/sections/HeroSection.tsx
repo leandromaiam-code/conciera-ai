@@ -23,7 +23,7 @@ const HeroSection = () => {
             Transforme <strong className="text-luxury-gold">atendimento em receita,</strong> com a excelência da sua marca, 24/7.
           </h1>
           <p className="text-lg sm:text-lg lg:text-xl xl:text-2xl text-foreground/90 leading-relaxed max-w-4xl lg:max-w-5xl mx-auto">
-Somos a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar empatia, conexão e maior conversão
+Somos a única concierge humanizada de IA capaz de reconhecer o perfil do seu paciente e se adaptar a ele para gerar empatia, conexão e maior conversão.
           </p>
         </div>
 
