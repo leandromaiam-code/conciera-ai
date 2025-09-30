@@ -8,25 +8,25 @@ const Results = () => {
       icon: <TrendingUp className="w-8 h-8" />,
       percentage: "40%",
       title: "Mais conversão",
-      description: "transformar mais de conversas em agendamentos confirmados."
+      description: "Elevação da conversão de conversas em agendamentos confirmados."
     },
     {
       icon: <UserCheck className="w-8 h-8" />,
       percentage: "30%",
       title: "Menos faltas (no-show)", 
-      description: "redução de no show, por meio de acompanhamento pré consulta e sinal antecipado."
+      description: "Redução de no-show, por meio de acompanhamento pré consulta e sinal antecipado."
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
       percentage: "50%",
       title: "Mais receita",
-      description: "aumentar faturamento ao melhorar conversão e reduzir faltas."
+      description: "Aumento de faturamento ao melhorar conversão e reduzir faltas."
     },
     {
       icon: <Clock className="w-8 h-8" />,
       percentage: "24/7",
       title: "Mais eficiência na equipe",
-      description: "liberar o time para fechamentos estratégicos enquanto a CONCIERA cuida do repetitivo 24/7."
+      description: "Liberação do time para fechamentos estratégicos enquanto a CONCIERA cuida do repetitivo 24/7."
     }
   ];
 
