@@ -61,11 +61,11 @@ const ValueProposition = () => {
         <div className="mt-20 text-center">
           <div className="bg-background rounded-3xl p-8 md:p-12 shadow-luxury max-w-4xl mx-auto animate-fade-up">
             <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-              Somos a única concierge humanizada de IA
+              A Conciera não é um software de atendimento; <strong className="text-luxury-gold">é um sistema de receita recorrente 
+            para clínicas de elite,</strong> arquitetado por quem entende profundamente do negócio
             </h3>
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-A Conciera não é um software de atendimento; <strong className="text-luxury-gold">é um sistema de receita recorrente 
-            para clínicas de elite,</strong> arquitetado por quem entende profundamente do negócio
+
             </p>
             <div className="w-24 h-1 bg-gradient-gold mx-auto rounded-full"></div>
           </div>
