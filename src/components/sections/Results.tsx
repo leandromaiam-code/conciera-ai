@@ -34,7 +34,7 @@ const Results = () => {
     "Resposta lenta é perda de clientes→ Atendimento 24/7 em WhatsApp, Instagram, site e telefone, em segundos.",
     "Turnover e re-treinagem → atendimento humanizado 24/07, sem interrupções, pausas, férias ou dores de cabeça.",
     "Faltas (no-show) → lembretes pré consulta e sinal no agendamento.",
-    "Conversas que não convertem → IA treinada playbooks por especialidade para remover objeções.",
+    "Conversas que não convertem → IA treinada em playbooks por especialidade para remover objeções.",
     "Dificuldade na gestão do negócio → Relatórios de ponta a ponta, que metrificam tudo."
   ];
 
