@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/badge";
 
 const Planos = () => {
   const plans = [
-     {
     {
       name: "Core",
-      subtitle: "Concierge digital 24/7 com agendamento e pagamento integrados",
+      subtitle: "Sistema de Receita Recorrente",
       price: "Sob consulta",
       icon: Star,
+      description: "Concierge digital 24/7 com agendamento e pagamento integrados",
       features: [
         "Atendente Inteligente 24/7",
         "Orquestração multi-canal (WhatsApp, Instagram, Site, Telefone)",
@@ -27,9 +27,10 @@ const Planos = () => {
     },
     {
       name: "Pro",
-      subtitle: "Sistema de Receita Recorrente",
+      subtitle: "Sistema de Receita Recorrente + Jornada Completa",
       price: "Sob consulta",
       icon: Crown,
+      description: "Tudo do Core + orientação estratégica com MÉTODO ARCHETIPSE®",
       features: [
         "Tudo da versão Core",
         "Recomendações de vendas para comercial",
@@ -46,6 +47,7 @@ const Planos = () => {
       subtitle: "Plataforma Estratégica Premium",
       price: "Sob consulta",
       icon: Gem,
+      description: "Tudo do Pro + acompanhamento 360° individualizado",
       features: [
         "Tudo da versão Pro +",
         "Método ARCHETIPSE®",
