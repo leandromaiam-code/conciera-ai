@@ -40,7 +40,7 @@ const ValueProposition = () => {
             <div className="w-24 h-1 bg-gradient-gold mx-auto rounded-full"></div>
           </div>
         </div>
-
+        <br></br>
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
