@@ -18,7 +18,7 @@ const Differentials = () => {
     },
     {
       icon: <HeartHandshake className="w-8 h-8" />,
-      text: "Excelência em toda jornada do cliente do primeiro contato ao pós tratamento.."
+      text: "Excelência em toda jornada do cliente do primeiro contato ao pós tratamento."
     }
   ];
 
