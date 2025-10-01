@@ -100,9 +100,6 @@ const Planos = () => {
                     <p className="text-sm text-muted-foreground mb-4">
                       {plan.subtitle}
                     </p>
-                    <p className="text-sm text-muted-foreground mb-6">
-                      {plan.description}
-                    </p>
                     <div className="text-3xl font-bold text-card-foreground">
                       {plan.price}
                     </div>
