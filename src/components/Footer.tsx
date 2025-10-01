@@ -17,7 +17,6 @@ const Footer = () => {
   const legalLinks = [
     { name: "Privacidade", href: "/privacidade" },
     { name: "Termos", href: "/termos" },
-    { name: "LGPD", href: "/lgpd" },
   ];
 
   return (
@@ -46,7 +45,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-luxury-gold" />
-                <span className="text-foreground/90">+55 (11) 9 9999-9999</span>
+                <span className="text-foreground/90">+55 (31) 9 9999-8888</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-luxury-gold" />
