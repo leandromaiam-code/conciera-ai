@@ -8,8 +8,8 @@ const HeroSection = () => {
   
   return (
     <section className={theme === 'light' ? 
-      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-8 lg:pt-16 flex items-center justify-center overflow-hidden bg-background" : 
-      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-8 lg:pt-16 flex items-center justify-center overflow-hidden bg-background"
+      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-24 sm:pt-28 lg:pt-32 flex items-center justify-center overflow-hidden bg-background" : 
+      "relative min-h-screen lg:min-h-[calc(100vh-4rem)] pt-24 sm:pt-28 lg:pt-32 flex items-center justify-center overflow-hidden bg-background"
     }>
 
       

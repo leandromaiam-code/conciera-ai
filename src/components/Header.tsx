@@ -20,14 +20,14 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/10">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8">
-        <div className="flex items-center justify-between h-18 lg:h-18">
+        <div className="flex items-center justify-between h-20 sm:h-22 lg:h-24">
           
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img 
               src={theme === 'light' ? logoImage : logoWhite} 
               alt="Conciera Logo" 
-              className="h-16 sm:h-24 lg:h-24 w-auto"
+              className="h-12 sm:h-16 lg:h-20 w-auto"
             />
           </Link>
 
