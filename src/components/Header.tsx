@@ -14,19 +14,18 @@ const Header = () => {
     { name: "Início", href: "/" },
     { name: "Planos", href: "/planos" },
     { name: "Blog", href: "/#authority" },
-    { name: "Login", href: "https://concierademo.vercel.app/" },
+    { name: "Login", href: "https://app.conciera.com.br/" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/10">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8">
         <div className="flex items-center justify-between h-20 sm:h-22 lg:h-24">
-          
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img 
-              src={theme === 'light' ? logoImage : logoWhite} 
-              alt="Conciera Logo" 
+            <img
+              src={theme === "light" ? logoImage : logoWhite}
+              alt="Conciera Logo"
               className="h-12 sm:h-16 lg:h-20 w-auto"
             />
           </Link>
@@ -53,25 +52,13 @@ const Header = () => {
               className="p-2 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 rounded-full hover:bg-accent/50"
               title="Alternar tema"
             >
-              {theme === 'light' ? (
-                <Moon className="w-4 h-4" />
-              ) : (
-                <Sun className="w-4 h-4" />
-              )}
+              {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 -mr-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <X className="h-5 w-5 text-primary" />
-            ) : (
-              <Menu className="h-5 w-5 text-primary" />
-            )}
+          <button className="lg:hidden p-2 -mr-2" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+            {isMenuOpen ? <X className="h-5 w-5 text-primary" /> : <Menu className="h-5 w-5 text-primary" />}
           </button>
         </div>
 
@@ -95,7 +82,7 @@ const Header = () => {
                   onClick={toggleTheme}
                   className="flex items-center justify-center w-full px-3 py-3 text-muted-foreground hover:text-primary transition-colors rounded-lg hover:bg-accent/50"
                 >
-                  {theme === 'light' ? (
+                  {theme === "light" ? (
                     <>
                       <Moon className="w-4 h-4 mr-2" />
                       Modo Escuro
