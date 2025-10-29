@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
+import CostOfDelay from "@/components/sections/CostOfDelay";
 import MainBenefits from "@/components/sections/MainBenefits";
 import Differentials from "@/components/sections/Differentials";
 import HowItWorks from "@/components/sections/HowItWorks";
@@ -19,6 +20,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <CostOfDelay />
         <MainBenefits />
         <Differentials />
         <ValueProposition />
