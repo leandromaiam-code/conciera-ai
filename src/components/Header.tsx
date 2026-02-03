@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -12,7 +12,7 @@ const Header = () => {
 
   const navItems = [
     { name: "Início", href: "/" },
-    { name: "Planos", href: "/planos" },
+    { name: "Planos", href: "/#plans" },
     { name: "Blog", href: "/#authority" },
     { name: "Login", href: "https://app.conciera.com.br/" },
   ];
@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/10">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-22 lg:h-24">
+        <div className="flex items-center justify-between h-20 sm:h-22 lg:h-24 relative">
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img
@@ -31,21 +31,29 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.name}
-                to={item.href}
+                href={item.href}
                 className="relative text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-sm py-2 px-1 group"
               >
                 {item.name}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-luxury-gold to-luxury-gold/60 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-              </Link>
+              </a>
             ))}
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
+            <Button 
+                variant="gold" 
+                onClick={() => window.location.href = 'https://app.conciera.com.br/briefing-inicial'}
+                className="animate-fade-in"
+            >
+              Quero ativar minha Conciera
+            </Button>
+
             {/* Dark Mode Toggle */}
             <button
               onClick={toggleTheme}
@@ -67,14 +75,14 @@ const Header = () => {
           <div className="lg:hidden">
             <div className="px-3 pt-3 pb-4 space-y-2 bg-background border-b border-border/10">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.href}
+                  href={item.href}
                   className="block px-3 py-3 text-muted-foreground hover:text-primary transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
               <div className="pt-4 space-y-3">
                 {/* Mobile Dark Mode Toggle */}
@@ -94,8 +102,16 @@ const Header = () => {
                     </>
                   )}
                 </button>
-                <Button variant="gold" size="default" className="w-full h-11">
-                  Agendar Demo
+                <Button 
+                    variant="gold" 
+                    size="default" 
+                    className="w-full h-11"
+                    onClick={() => {
+                        window.location.href = '#plans';
+                        setIsMenuOpen(false);
+                    }}
+                >
+                  Quero ativar
                 </Button>
               </div>
             </div>
